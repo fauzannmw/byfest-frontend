@@ -1,11 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Catalog from './pages/Catalog';
+import Homepage from './pages/Homepage';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Test 1</h1>
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route exact path="/">
+            <Homepage />
+          </Route>
+          <Route path="/catalog">
+            <Catalog />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
