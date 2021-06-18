@@ -1,0 +1,203 @@
+@import "../App.scss";
+
+.catalog{
+    background-color: $putih;
+    .navbar-custom{
+        background-color: $kuning;
+        padding: 5px 0px;
+        .container{
+            padding-left: 0;
+            padding-right: 0;
+            .navbar-logo{
+                background-image: url('../assets/image/byfest_hijau.png');
+                background-size: cover;
+                height: 100px;
+                width: 90px;
+            }
+            .navbar-button{
+                background-color: $kuning;
+                color: $hijau;
+                font-family: "Karla-Regular";
+                font-size: 20px;
+                border: none;
+                border-radius: 11px;
+                padding: 10px 40px;
+                
+            }
+            .navbar-button.aktif{
+                background-color: $hijau;
+                color: $kuning;
+            }
+            .navbar-button.submission{
+                background-color: $oranye;
+                color: $kuning;
+            }
+        }
+    }
+
+    .content{
+        h1{
+            font-family: "Butler";
+            color: $hijau;
+            margin: 50px 0;
+            font-size: 64px;
+        }
+        
+        .nav-link{
+            font-family: "Karla-Bold";
+            font-size: 28px;
+            background-color: $kuning;
+            color: $hijau;
+            border: 5px solid $hijau;
+            border-width: 5px 0px 0px 5px;
+            border-radius: 0px;
+            padding-left: 60px;
+            padding-right: 60px;
+            &:hover{
+                background-color: $hijau;
+                color: $kuning;
+                border: 5px solid $hijau;
+                border-width: 5px 0px 0px 5px;
+            }
+        }
+        .nav-link:last-child{
+            border-width: 5px 5px 0px 5px;
+            &:hover{
+                border-width: 5px 5px 0px 5px;
+            }
+        }
+        .nav-item.nav-link.active{
+            background-color: $hijau;
+            border-style: solid;
+            border-color: $hijau;
+            border-width: 5px 0px 0px 5px;
+            color: $kuning;
+            // transform: scale(1.5);
+            // padding: 10px 0;
+            position: relative;
+            height: 100px;
+            margin-top: -18px;
+            // bottom: 0px;
+            display: flex;
+            align-items: center;
+        }
+        .nav-link.active:last-child{
+            border-width: 5px 5px 0px 5px;
+        }
+        .nav-item.nav-link{
+            display: flex;
+            align-items: center;
+            height: 82px;
+        }
+        .sonnet{
+            background-color: $kuning;
+            border: 5px solid $hijau;
+            padding: 50px;
+            h2{
+                font-family: "Butler";
+                color: $hijau;
+                font-size: 50px;
+            }
+            p{
+                font-family: "Karla-Regular";
+                font-size: 23px;
+                margin-bottom: 0px;
+            }
+        } 
+
+        .card-pengumuman{
+            background-color: $hijau;
+            padding: 0px 15px 0px 15px;
+            border: 5px solid $hijau;
+            margin-bottom: 50px;
+            .kiri{
+                background-image: url('../assets/image/pengumuman.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .kanan{
+                background-color: $kuning;
+            }
+            .kanan-inner{
+                background-color: $kuning;
+                margin: 25px 15px 25px 25px;
+                h3{
+                    font-family: "Karla-Bold";
+                    font-size: 40px;
+                }
+                p{
+                    font-family: "Karla-Regular";
+                    font-size: 23px;
+                    margin-bottom: 0px;
+                }
+                .tanggal{
+                    margin: 15px 0px 3px 0;
+                }
+                .button-pengumuman{
+                    font-family: "Karla-Regular";
+                    font-size: 20px;
+                    padding: 10px 30px;
+                    margin-top: 20px;
+                    background-color: $oranye;
+                    color: $kuning;
+                    border: none;
+                    border-radius: 11px;
+                }
+                
+            }
+        }   
+        
+        
+        
+    }
+}
+
+// .dialog{
+//     background-image: url("../assets/image/pengumuman.jpg");
+//     width: 500px;
+//     height: 500px;
+//     background-color: black;
+//     h2{
+//         color: red;
+//     }
+// }
+
+.modal{
+    .modal-content{
+        border: none;
+        border-radius: 0;
+        .modal-wrapper{
+            border: 5px solid $hijau;
+            background-color: $hijau;
+            .modal-header{
+                background-image: url("../assets/image/pengumuman.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 300px;
+                border-radius: 0;
+                border-bottom: 1px solid $kuning;
+                h1{
+                    font-family: "Karla-Bold";
+                }
+            }
+            .modal-body{
+                background-color: $kuning;
+                margin-top: 0;
+                // border-bottom: 1px solid $kuning;
+                h3{
+                    font-family: "Karla-Bold";
+                    font-size: 40px;
+                }
+                p{
+                    font-family: "Karla-Regular";
+                    font-size: 20px;
+                    margin-bottom: 0px;
+                }
+                .tanggal{
+                    margin: 15px 0px 3px 0;
+                }
+            }
+        }
+    }
+    
+}
