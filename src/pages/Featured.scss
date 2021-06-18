@@ -1,0 +1,89 @@
+@import "../App.scss";
+
+.featured{
+    background-color: #E5E5E5;
+    .content{
+        h1{
+            font-family: "Butler";
+            color: $hijau;
+            margin: 50px 0;
+            font-size: 64px;
+        }
+        .column{
+            padding: 0;
+            margin-bottom: 50px;
+            .poster-wrapper{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
+                h3{
+                    font-family: "Karla-Bold";
+                    font-size: 40px;
+                    margin-top: 20px;
+                    margin-bottom: 0;
+                }
+                p{
+                    font-family: "Karla-Regular";
+                    font-size: 23px;
+                    margin: 0px;
+                }
+                .button-poster{
+                    font-family: "Karla-Regular";
+                    font-size: 18px;
+                    padding: 8px 27px;
+                    margin-top: 10px;
+                    background-color: $oranye;
+                    color: $kuning;
+                    border: none;
+                    border-radius: 11px;
+                }
+            }
+        }
+    }
+}
+
+.modal-poster{
+    .modal-content{
+        border: none;
+        border-radius: 0;
+        .modal-wrapper{
+            border: 5px solid $hijau;
+            background-color: $hijau;
+            .modal-header{
+                display: inline-flexbox;
+                justify-content: space-between;
+                // align-content: flex-start;
+                .span{
+
+                }
+                .col-wrapper{
+                    .kiri{
+                        background-image: url("../assets/image/poster.jpg");
+                        background-size: cover;
+                        width: auto;
+                    }
+                }
+            }
+            .modal-body{
+                background-color: $kuning;
+                margin-top: 0;
+                // border-bottom: 1px solid $kuning;
+                h3{
+                    font-family: "Karla-Bold";
+                    font-size: 40px;
+                }
+                p{
+                    font-family: "Karla-Regular";
+                    font-size: 20px;
+                    margin-bottom: 0px;
+                }
+                .tanggal{
+                    margin: 15px 0px 3px 0;
+                }
+            }
+        }
+    }
+    
+}

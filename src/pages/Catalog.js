@@ -2,10 +2,14 @@ import { useEffect, useState } from "react";
 import { Tab, Tabs, Button, Navbar, Nav,Row, Col, Modal } from "react-bootstrap";
 import { Link } from 'react-router-dom';
 import Sonnet from "../component/Sonnet";
+import GlobalNavbar from "../component/GlobalNavbar";
+import GlobalFooter from "../component/GlobalFooter";
 import GambarPengumuman from "../assets/image/pengumuman.jpg";
 import LogoNavbar from "../assets/image/byfest_hijau.png";
 import "./Catalog.scss";
 import post from '../api/post';
+import axios from "axios";
+import { setupCache } from "axios-cache-adapter";
 var parseString = require('xml2js').parseString;
 
 const Catalog = () => {
@@ -33,11 +37,24 @@ const Catalog = () => {
     const handleClose = () => setShow(false);
     const handleShow = (id) => setShow(id);
 
+    // const cache = setupCache({
+    //     maxAge: 15 * 60 * 1000
+    //   })
+      
+    //   // Create `axios` instance passing the newly created `cache.adapter`
+    //   const api = axios.create({
+    //     adapter: cache.adapter
+    // })
+
     useEffect(async () => {
         // const resPost = await post.get(`14276`);
-        const resPost = await post.get(`sheet1`);
-        // console.log(resPost);
-        setPostingan(resPost.data);
+        await post.get(`sheet1`
+        ).then(async (res) => {
+            setPostingan(res.data);
+            const length = await post.cache.length();
+            console.log('Cache store length:', length);
+        });
+        // console.log(resPost);  
         // console.log(postingan);
         // parseString(resPost.data, function (err, result) {
         //     console.dir(result);
@@ -48,36 +65,8 @@ const Catalog = () => {
 
     return(
         <div className="catalog">
-            <div className="navbar-custom">
-                <div className="container">
-                <Navbar variant="dark">
-                    <Navbar.Brand href="#home" className="mr-auto">
-                        {/* <div className="navbar-logo"></div> */}
-                        <img
-                            src={ LogoNavbar }
-                            width="70"
-                            height="70"
-                            className="d-inline-block align-top"
-                            alt="Brawijaya Film Festival"
-                        />
-                    </Navbar.Brand>
-                    <Nav>
-                        <Link to="/catalog">
-                            <button className="navbar-button aktif">Catalog Event</button>
-                        </Link>
-                        <Link to="/featured">
-                            <button className="navbar-button">Featured</button>
-                        </Link>
-                        <Link to="/submission">
-                            <button className="navbar-button submission">Film Submission</button>
-                        </Link>
-                        {/* <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#features">Features</Nav.Link>
-                        <Nav.Link href="#pricing">Pricing</Nav.Link> */}
-                    </Nav>
-                </Navbar>
-                </div>
-            </div>
+
+            <GlobalNavbar active="catalog" />         
 
             <div className="content">
                 <div className="container">
@@ -100,7 +89,7 @@ const Catalog = () => {
                     <h1>PENGUMUMAN</h1>
                     {
                         postingan.map((posting) => (
-                            <div className="pengumuman">
+                            <div className="pengumuman" key={posting.Judul}>
                                 <div className="card-pengumuman">
                                     <Row>
                                         <Col xs={4} className="kiri">
@@ -118,7 +107,7 @@ const Catalog = () => {
                                         </Col>
                                     </Row>
                                 </div>
-                                    <Modal show={show == `${posting.Judul}`} onHide={handleClose}>
+                                    <Modal className="modal-pengumuman" show={show == `${posting.Judul}`} onHide={handleClose}>
                                         <div className="modal-wrapper">
                                             <Modal.Header closeButton>
                                             <Modal.Title></Modal.Title>
@@ -132,14 +121,12 @@ const Catalog = () => {
                                     </Modal>
                             </div>
                         ))
-                    }
-                    
-                    
+                    }              
                 </div>
-            </div>
+            </div>   
 
-            
-            
+            <GlobalFooter />
+
         </div>
     )
 }
