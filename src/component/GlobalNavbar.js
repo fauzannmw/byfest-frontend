@@ -41,9 +41,9 @@ const GlobalNavbar = (props) => {
                         <Link to="/featured">
                             <button className={`navbar-button ${ featured }`}>Featured</button>
                         </Link>
-                        <Link to="/submission">
+                        <a target="_blank" href="https://forms.gle/pSu4boUPGVjWUR8S8">
                             <button className="navbar-button submission">Film Submission</button>
-                        </Link>
+                        </a>
                         {/* <Nav.Link href="#home">Home</Nav.Link>
                         <Nav.Link href="#features">Features</Nav.Link>
                         <Nav.Link href="#pricing">Pricing</Nav.Link> */}

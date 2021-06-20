@@ -2,39 +2,7 @@
 
 .catalog{
     background-color: #E5E5E5;
-    .navbar-custom{
-        background-color: $kuning;
-        padding: 5px 0px;
-        .container{
-            padding-left: 0;
-            padding-right: 0;
-            .navbar-logo{
-                background-image: url('../assets/image/byfest_hijau.png');
-                background-size: cover;
-                height: 100px;
-                width: 90px;
-            }
-            .navbar-button{
-                background-color: $kuning;
-                color: $hijau;
-                font-family: "Karla-Regular";
-                font-size: 20px;
-                border: none;
-                border-radius: 11px;
-                padding: 10px 40px;
-                
-            }
-            .navbar-button.aktif{
-                background-color: $hijau;
-                color: $kuning;
-            }
-            .navbar-button.submission{
-                background-color: $oranye;
-                color: $kuning;
-            }
-        }
-    }
-
+    
     .content{
         h1{
             font-family: "Butler";
@@ -53,6 +21,7 @@
             border-radius: 0px;
             padding-left: 60px;
             padding-right: 60px;
+            transition: 0.2s;
             &:hover{
                 background-color: $hijau;
                 color: $kuning;
@@ -111,12 +80,38 @@
             border: 5px solid $hijau;
             margin-bottom: 50px;
             .kiri{
-                background-image: url('../assets/image/pengumuman.jpg');
-                background-size: cover;
-                background-repeat: no-repeat;
+                // background-image: url('../assets/image/pengumuman.jpg');
+                // background-size: cover;
+                // background-repeat: no-repeat;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .preview-image{
+                    object-fit: cover;
+                    max-width: 458.328px;
+                    min-width: 458.328px;
+                    // max-height: 204px;
+                    width: auto;
+                    height: auto;
+                }
+                .spinner-wrapper{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    margin-bottom: 50px;
+                    .spinner{
+                        width: 60px;
+                        height: 60px;
+                        color: $kuning;
+                    }
+                }
             }
             .kanan{
                 background-color: $kuning;
+                // border: 5px solid $hijau;
+                // border-width: 0px 0px 0px 5px;
             }
             .kanan-inner{
                 background-color: $kuning;
@@ -142,13 +137,26 @@
                     color: $kuning;
                     border: none;
                     border-radius: 11px;
+                    transition: 0.2s;
+                    &:hover{
+                        background-color: $oranyeTua;
+                        box-shadow: 0px 0px 19px -5px rgba($oranyeTua,0.45);
+                    }
                 }
-                
             }
         }   
-        
-        
-        
+        .spinner-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 50px;
+            .spinner{
+                width: 60px;
+                height: 60px;
+                color: $hijau;
+            }
+        }        
     }
 }
 
@@ -176,8 +184,31 @@
                 height: 250px;
                 border-radius: 0;
                 border-bottom: 1px solid $kuning;
+                flex-direction: row-reverse;
                 h1{
                     font-family: "Karla-Bold";
+                }
+                .tombol-tutup{
+                    text-align: right;
+                    a{
+                        &:hover{
+                            cursor: pointer;
+                        }
+                        .MuiSvgIcon-root{
+                            width: 40px;
+                            height: 40px;
+                            padding: 5px;
+                            color: $hijau;
+                            // background: rgba( $kuningTua , 1);
+                            background-color: $kuning;
+                            border-radius: 50%;
+                            transition: 0.2s;
+                            &:hover{
+                                background-color: $kuningTua;
+                                box-shadow: 0px 0px 19px -5px rgba($kuningTua,0.45);
+                            }
+                        }
+                    }
                 }
             }
             .modal-body{

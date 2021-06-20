@@ -6,7 +6,7 @@ const Sonnet = (props) => {
     return(
         <div className="sonnet">
             <h2>{ header }</h2>
-            <p>{ content }</p>
+            <p style={{whiteSpace: 'pre-line'}}>{ content }</p>
         </div>
     );
 }
