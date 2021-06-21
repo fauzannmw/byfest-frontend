@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
+import './fonts/Butler/Butler_Bold.otf';
+import './fonts/Karla/Karla-Regular.ttf';
+import './fonts/Karla/Karla-Bold.ttf';
 
 ReactDOM.render(
   <React.StrictMode>

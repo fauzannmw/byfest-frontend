@@ -1,0 +1,159 @@
+@import "../App.scss";
+
+.featured{
+    background-color: #E5E5E5;
+    .content{
+        h1{
+            font-family: "Butler";
+            color: $hijau;
+            margin: 50px 0;
+            font-size: 64px;
+        }
+        .column{
+            padding: 0;
+            margin-bottom: 50px;
+            .poster-wrapper{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
+                h3{
+                    font-family: "Karla-Bold";
+                    font-size: 40px;
+                    margin-top: 20px;
+                    margin-bottom: 0;
+                }
+                p{
+                    font-family: "Karla-Regular";
+                    font-size: 23px;
+                    margin: 0px;
+                }
+                .button-poster{
+                    font-family: "Karla-Regular";
+                    font-size: 18px;
+                    padding: 8px 27px;
+                    margin-top: 10px;
+                    background-color: $oranye;
+                    color: $kuning;
+                    border: none;
+                    border-radius: 11px;
+                    transition: 0.2s;
+                    &:hover{
+                        background-color: $oranyeTua;
+                        box-shadow: 0px 0px 19px -5px rgba($oranyeTua,0.45);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal-poster{
+    .modal-content{
+        border: none;
+        border-radius: 0;
+        .modal-wrapper{
+            border: 5px solid $hijau;
+            background-color: $kuning;
+            .modal-header{
+                display: block;
+                justify-content: space-between;
+                border-bottom: 1px solid $kuning;
+                padding-bottom: 0;
+                padding-top: 20px;
+                // align-content: flex-start;
+                .col-wrapper{
+                    padding: 20px;
+                    padding-top: 0px;
+                    .column{
+                        padding: 0;
+                        h3{
+                            font-family: "Karla-Bold";
+                            font-size: 35px;
+                        }
+                        p{
+                            font-family: "Karla-Regular";
+                            font-size: 15px;
+                            margin-bottom: 0px;
+                        }
+                    }
+                    .kiri{
+                        .poster-preview{
+                            object-fit: cover;
+                            max-width: 187px;
+                            width: auto;
+                            height: auto;
+                        }
+                        // background-image: url("../assets/image/poster.jpg");
+                        // background-size: cover;
+                        // background-repeat: no-repeat;                   
+                        // height: 260px;
+                        margin-top: -38px;
+                    }
+                    .kanan{
+                        margin-top: -38px;
+                        .kanan-inner{
+                            margin-left: 20px;
+                        }
+                    }
+                    .tombol-tutup{
+                        z-index: 5;
+                        text-align: right;
+                        a{
+                            &:hover{
+                                cursor: pointer;
+                            }
+                            .MuiSvgIcon-root{
+                                width: 40px;
+                                height: 40px;
+                                padding: 5px;
+                                color: $kuning;
+                                // background: rgba( $hijau , 1);
+                                background-color: $hijau;
+                                border-radius: 50%;
+                                transition: 0.2s;
+                                &:hover{
+                                    background-color: $hijauTua;
+                                    box-shadow: 0px 0px 19px -5px rgba($hijauTua,0.45);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .modal-body{
+                background-color: $kuning;
+                margin-top: 0;
+                padding-top: 0;
+                // border-bottom: 1px solid $kuning;
+                h3{
+                    font-family: "Karla-Bold";
+                    font-size: 30px;
+                }
+                p{
+                    font-family: "Karla-Regular";
+                    font-size: 15px;
+                    margin-bottom: 0px;
+                }
+                .screenshot-wrapper{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $kuning;
+                    border: none;
+                    border-radius: 0;
+                    margin-bottom: 30px;
+                    .screenshot{
+                        object-fit: cover;
+                        // max-width: 400px;
+                        max-height: 204px;
+                        width: auto;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    
+}

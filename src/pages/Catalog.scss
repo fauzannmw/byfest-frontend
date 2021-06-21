@@ -1,0 +1,234 @@
+@import "../App.scss";
+
+.catalog{
+    background-color: #E5E5E5;
+    
+    .content{
+        h1{
+            font-family: "Butler";
+            color: $hijau;
+            margin: 50px 0;
+            font-size: 64px;
+        }
+        
+        .nav-link{
+            font-family: "Karla-Bold";
+            font-size: 28px;
+            background-color: $kuning;
+            color: $hijau;
+            border: 5px solid $hijau;
+            border-width: 5px 0px 0px 5px;
+            border-radius: 0px;
+            padding-left: 60px;
+            padding-right: 60px;
+            transition: 0.2s;
+            &:hover{
+                background-color: $hijau;
+                color: $kuning;
+                border: 5px solid $hijau;
+                border-width: 5px 0px 0px 5px;
+            }
+        }
+        .nav-link:last-child{
+            border-width: 5px 5px 0px 5px;
+            &:hover{
+                border-width: 5px 5px 0px 5px;
+            }
+        }
+        .nav-item.nav-link.active{
+            background-color: $hijau;
+            border-style: solid;
+            border-color: $hijau;
+            border-width: 5px 0px 0px 5px;
+            color: $kuning;
+            // transform: scale(1.5);
+            // padding: 10px 0;
+            position: relative;
+            height: 100px;
+            margin-top: -18px;
+            // bottom: 0px;
+            display: flex;
+            align-items: center;
+        }
+        .nav-link.active:last-child{
+            border-width: 5px 5px 0px 5px;
+        }
+        .nav-item.nav-link{
+            display: flex;
+            align-items: center;
+            height: 82px;
+        }
+        .sonnet{
+            background-color: $kuning;
+            border: 5px solid $hijau;
+            padding: 50px;
+            h2{
+                font-family: "Butler";
+                color: $hijau;
+                font-size: 50px;
+            }
+            p{
+                font-family: "Karla-Regular";
+                font-size: 23px;
+                margin-bottom: 0px;
+            }
+        } 
+
+        .card-pengumuman{
+            background-color: $hijau;
+            padding: 0px 15px 0px 15px;
+            border: 5px solid $hijau;
+            margin-bottom: 50px;
+            .kiri{
+                // background-image: url('../assets/image/pengumuman.jpg');
+                // background-size: cover;
+                // background-repeat: no-repeat;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .preview-image{
+                    object-fit: cover;
+                    max-width: 458.328px;
+                    min-width: 458.328px;
+                    // max-height: 204px;
+                    width: auto;
+                    height: auto;
+                }
+                .spinner-wrapper{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    margin-bottom: 50px;
+                    .spinner{
+                        width: 60px;
+                        height: 60px;
+                        color: $kuning;
+                    }
+                }
+            }
+            .kanan{
+                background-color: $kuning;
+                // border: 5px solid $hijau;
+                // border-width: 0px 0px 0px 5px;
+            }
+            .kanan-inner{
+                background-color: $kuning;
+                margin: 25px 15px 25px 25px;
+                h3{
+                    font-family: "Karla-Bold";
+                    font-size: 40px;
+                }
+                p{
+                    font-family: "Karla-Regular";
+                    font-size: 23px;
+                    margin-bottom: 0px;
+                }
+                .tanggal{
+                    margin: 15px 0px 3px 0;
+                }
+                .button-pengumuman{
+                    font-family: "Karla-Regular";
+                    font-size: 20px;
+                    padding: 10px 30px;
+                    margin-top: 20px;
+                    background-color: $oranye;
+                    color: $kuning;
+                    border: none;
+                    border-radius: 11px;
+                    transition: 0.2s;
+                    &:hover{
+                        background-color: $oranyeTua;
+                        box-shadow: 0px 0px 19px -5px rgba($oranyeTua,0.45);
+                    }
+                }
+            }
+        }   
+        .spinner-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 50px;
+            .spinner{
+                width: 60px;
+                height: 60px;
+                color: $hijau;
+            }
+        }        
+    }
+}
+
+// .dialog{
+//     background-image: url("../assets/image/pengumuman.jpg");
+//     width: 500px;
+//     height: 500px;
+//     background-color: black;
+//     h2{
+//         color: red;
+//     }
+// }
+
+.modal-pengumuman{
+    .modal-content{
+        border: none;
+        border-radius: 0;
+        .modal-wrapper{
+            border: 5px solid $hijau;
+            background-color: $hijau;
+            .modal-header{
+                background-image: url("../assets/image/pengumuman.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 250px;
+                border-radius: 0;
+                border-bottom: 1px solid $kuning;
+                flex-direction: row-reverse;
+                h1{
+                    font-family: "Karla-Bold";
+                }
+                .tombol-tutup{
+                    text-align: right;
+                    a{
+                        &:hover{
+                            cursor: pointer;
+                        }
+                        .MuiSvgIcon-root{
+                            width: 40px;
+                            height: 40px;
+                            padding: 5px;
+                            color: $hijau;
+                            // background: rgba( $kuningTua , 1);
+                            background-color: $kuning;
+                            border-radius: 50%;
+                            transition: 0.2s;
+                            &:hover{
+                                background-color: $kuningTua;
+                                box-shadow: 0px 0px 19px -5px rgba($kuningTua,0.45);
+                            }
+                        }
+                    }
+                }
+            }
+            .modal-body{
+                background-color: $kuning;
+                margin-top: 0;
+                // border-bottom: 1px solid $kuning;
+                h3{
+                    font-family: "Karla-Bold";
+                    font-size: 40px;
+                }
+                p{
+                    font-family: "Karla-Regular";
+                    font-size: 20px;
+                    margin-bottom: 0px;
+                }
+                .tanggal{
+                    margin: 15px 0px 3px 0;
+                }
+            }
+        }
+    }
+    
+}
