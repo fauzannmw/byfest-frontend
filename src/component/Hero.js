@@ -1,21 +1,27 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import Jumbotron from "react-bootstrap/Jumbotron";
+import { Container, Jumbotron, Row, Col } from "react-bootstrap";
 import bgImage from "../assets/Jumbotron-Byfest.png";
+import logoUtama from "../assets/image/byfest_kuning.png";
+import "./Hero.scss";
+
 const Hero = () => {
   return (
-    <Jumbotron
-      fluid
-      style={{ backgroundImage: `url(${bgImage})`, height: "100%" }}
-    >
+    // <Jumbotron
+    //   fluid
+    //   style={{ backgroundImage: `url(${bgImage})`, height: "90vh" }}
+    // >
+    <div className="hero">
       <Container>
-        <h1>Fluid jumbotron</h1>
-        <p>
-          This is a modified jumbotron that occupies the entire horizontal space
-          of its parent.
-        </p>
+        <img src={logoUtama} alt="" style={{ height: "265px" }} />
+        <Row className="justify-content-md-center">
+          <Col md="auto">
+            <h1>BRAWIJAYA MOVIE FESTIVAL</h1>
+          </Col>
+        </Row>
+        <p>19 - 20 Oktober 2021</p>
       </Container>
-    </Jumbotron>
+    </div>
+    // </Jumbotron>
   );
 };
 

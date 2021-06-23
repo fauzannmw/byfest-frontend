@@ -24,7 +24,7 @@ const GlobalNavbar = (props) => {
             <div className="navbar-custom">
                 <div className="container">
                 <Navbar variant="dark">
-                    <Navbar.Brand href="#home" className="mr-auto">
+                    <Navbar.Brand href="/" className="mr-auto">
                         {/* <div className="navbar-logo"></div> */}
                         <img
                             src={ LogoNavbar }
