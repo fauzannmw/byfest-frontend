@@ -3,9 +3,12 @@ $bg-img: url("../assets/Jumbotron-Byfest.png");
 
 .hero {
   background-image: $bg-img;
-  width: 100%;
-  height: 100%;
+  background-size: cover;
+  height: 1000px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   h1 {
     font-family: "Butler";

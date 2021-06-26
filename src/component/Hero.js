@@ -6,12 +6,9 @@ import "./Hero.scss";
 
 const Hero = () => {
   return (
-    // <Jumbotron
-    //   fluid
-    //   style={{ backgroundImage: `url(${bgImage})`, height: "90vh" }}
-    // >
     <div className="hero">
-      <Container>
+      <Container >
+        {/* className="container-hero" */}
         <img src={logoUtama} alt="" style={{ height: "265px" }} />
         <Row className="justify-content-md-center">
           <Col md="auto">
@@ -21,7 +18,6 @@ const Hero = () => {
         <p>19 - 20 Oktober 2021</p>
       </Container>
     </div>
-    // </Jumbotron>
   );
 };
 
