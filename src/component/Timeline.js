@@ -1,20 +1,21 @@
 import React from "react";
 import { Container, Jumbotron, Row, Col } from "react-bootstrap";
-import "./Announcement.scss";
+import treeImage from "../assets/image/pengumuman-tree.png";
+import "./Timeline.scss";
 
-const Announcement = () => {
+const timeline = () => {
   return (
-    <div className="announcement">
+    <div className="timeline">
       <Container>
         <Row className="justify-content-md-center">
-          <h1>P E N G U M U M A N</h1>
+          <h1>T I M E L I N E</h1>
         </Row>
         <Row className="justify-content-md-center">
-          <button>Lihat Catalog Event</button>
+          <img src={treeImage} alt="" />
         </Row>
       </Container>
     </div>
   );
 };
 
-export default Announcement;
+export default timeline;

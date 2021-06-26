@@ -1,0 +1,21 @@
+@import "../App.scss";
+
+.description {
+  .container {
+    // margin: 100px auto;
+    // margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-family: "Butler";
+    color: $hijau;
+    font-size: 40px;
+    letter-spacing: 20px;
+  }
+
+  img {
+    width: 500px;
+    // margin: 50px auto;
+  }
+}
