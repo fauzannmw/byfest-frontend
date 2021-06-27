@@ -7,7 +7,7 @@ import "./Hero.scss";
 const Hero = () => {
   return (
     <div className="hero">
-      <Container >
+      <Container>
         {/* className="container-hero" */}
         <img src={logoUtama} alt="" style={{ height: "265px" }} />
         <Row className="justify-content-md-center">

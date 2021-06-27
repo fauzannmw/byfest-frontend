@@ -1,8 +1,8 @@
-import './App.scss';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Catalog from './pages/Catalog';
-import Homepage from './pages/Homepage';
-import Featured from './pages/Featured';
+import "./App.scss";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Catalog from "./pages/Catalog";
+import Homepage from "./pages/Homepage";
+import Featured from "./pages/Featured";
 
 function App() {
   return (
