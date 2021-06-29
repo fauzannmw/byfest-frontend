@@ -1,17 +1,14 @@
 @import "../App.scss";
 
 .judges {
-  .container {
-    margin: 100px auto;
-    .row {
-      .col {
-        text-align: center;
-        .card {
-          .card-image-top {
-            width: 100px;
-          }
-        }
-      }
+  .card {
+    border: none;
+    text-align: center;
+    .card-title {
+      font-family: "Butler";
+      color: $hijau;
+      font-size: 38px;
+      letter-spacing: 20px;
     }
   }
 
@@ -29,8 +26,15 @@
     letter-spacing: 20px;
   }
 
+  p {
+    font-family: "Karla-Bold";
+    color: $hijau;
+    font-size: 20px;
+    letter-spacing: 0.49em;
+  }
+
   img {
-    width: 800px;
-    margin: 100px 0;
+    width: 200px;
+    margin: 10px auto;
   }
 }

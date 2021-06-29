@@ -15,18 +15,32 @@ const judges = () => {
         </Row>
         <Row className="justify-content-md-center">
           <Col md={6}>
-            <Card style={{ width: "18rem" }}>
+            <Card style={{ width: "22rem" }}>
               <Card.Img variant="top" src={judges1} />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
+                <Card.Title>STEVE AOKI</Card.Title>
+                <Card.Text>Film Enthusiast</Card.Text>
               </Card.Body>
             </Card>
           </Col>
-          <Col md={6}>xs=6 md=4</Col>
+          <Col md={6}>
+            <Card style={{ width: "22rem" }}>
+              <Card.Img variant="top" src={judges1} />
+              <Card.Body>
+                <Card.Title>STEVE AOKI</Card.Title>
+                <Card.Text>Film Enthusiast</Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={6}>
+            <Card style={{ width: "22rem" }}>
+              <Card.Img variant="top" src={judges1} />
+              <Card.Body>
+                <Card.Title>STEVE AOKI</Card.Title>
+                <Card.Text>Film Enthusiast</Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
         </Row>
       </Container>
     </div>
