@@ -14,17 +14,22 @@ const Faq = () => {
         <Row className="justify-content-md-center">
           <Accordion
             title="What da dawg doin?"
-            content="Be sure to test any solution across different Reader preferences. A site visitor may have their browser set to open the PDF in Reader/Acrobat as opposed to the browser, e.g., by disabling the Acrobat plugin in Firefox. I can't be sure of my results, because I have two different Acrobat "
+            content="<p>Be sure to test any solution across different Reader preferences. A site visitor may have their browser set to open the PDF in Reader/Acrobat as opposed to the browser, e.g., by disabling the Acrobat plugin in Firefox. I can't be sure of my results, because I have two different Acrobat</p>"
           />
           <Accordion
             title="What da dawg doin?"
             content="
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        "
+            <p>Be sure to test any solution across different Reader preferences. A site visitor may have their browser set to open the PDF in Reader/Acrobat as opposed to the browser, e.g., by disabling the Acrobat plugin in Firefox. I can't be sure of my results, because I have two different Acrobat</p>"
+          />
+          <Accordion
+            title="What da dawg doin?"
+            content="
+            <p>Be sure to test any solution across different Reader preferences. A site visitor may have their browser set to open the PDF in Reader/Acrobat as opposed to the browser, e.g., by disabling the Acrobat plugin in Firefox. I can't be sure of my results, because I have two different Acrobat</p>"
+          />
+          <Accordion
+            title="What da dawg doin?"
+            content="
+            <p>Be sure to test any solution across different Reader preferences. A site visitor may have their browser set to open the PDF in Reader/Acrobat as opposed to the browser, e.g., by disabling the Acrobat plugin in Firefox. I can't be sure of my results, because I have two different Acrobat</p>"
           />
         </Row>
       </Container>
