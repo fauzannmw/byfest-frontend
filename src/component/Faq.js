@@ -1,63 +1,32 @@
 import React from "react";
-import {
-  Container,
-  Jumbotron,
-  Row,
-  Col,
-  Card,
-  Accordion,
-  Button,
-} from "react-bootstrap";
-import { Helmet } from "react-helmet";
+import { Container, Jumbotron, Row, Col, Card, Button } from "react-bootstrap";
+import Accordion from "./Accordion";
 
-// import "./Faq.scss";
-import "./Faq.css";
-
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}
+import "./Faq.scss";
 
 const Faq = () => {
   return (
     <div className="faq">
-      <Helmet>
-        <meta charSet="utf-8" />
-        {/* <title>My Title</title> */}
-        {/* <link rel="canonical" href="http://example.com/example" /> */}
-        <script src="/src/component/Accordion.js" type="text/javascript" />
-      </Helmet>
       <Container>
         <Row className="justify-content-md-center">
-          <h1>B Y F E S T</h1>
+          <h1>F A Q</h1>
         </Row>
         <Row className="justify-content-md-center">
-          <h5>J U D G E S</h5>
+          <Accordion
+            title="What da dawg doin?"
+            content="Be sure to test any solution across different Reader preferences. A site visitor may have their browser set to open the PDF in Reader/Acrobat as opposed to the browser, e.g., by disabling the Acrobat plugin in Firefox. I can't be sure of my results, because I have two different Acrobat "
+          />
+          <Accordion
+            title="What da dawg doin?"
+            content="
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        "
+          />
         </Row>
-        <button className="accordion">Section 1</button>
-        <div className="panel">
-          <p>Lorem ipsum...</p>
-        </div>
-
-        <button className="accordion">Section 2</button>
-        <div className="panel">
-          <p>Lorem ipsum...</p>
-        </div>
-
-        <button className="accordion">Section 3</button>
-        <div className="panel">
-          <p>Lorem ipsum...</p>
-        </div>
       </Container>
     </div>
   );
