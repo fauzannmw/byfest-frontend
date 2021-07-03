@@ -1,17 +1,6 @@
 @import "../App.scss";
 
 .faq {
-  .card {
-    border: none;
-    text-align: center;
-    .card-title {
-      font-family: "Butler";
-      color: $hijau;
-      font-size: 38px;
-      letter-spacing: 20px;
-    }
-  }
-
   h1 {
     font-family: "Butler";
     color: $hijau;
@@ -21,13 +10,17 @@
 
   h5 {
     font-family: "Karla-Regular";
-    color: $hijau;
+    font-weight: 600;
     font-size: 20px;
+    color: $hijau;
+    text-align: left;
   }
 
   p {
     font-family: "Karla-Regular";
-    color: $hitam;
+    font-weight: 400;
     font-size: 18px;
+    color: $hitam;
+    padding: 18px;
   }
 }
