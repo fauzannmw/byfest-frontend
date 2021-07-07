@@ -1,4 +1,5 @@
 import Hero from "../component/Hero";
+import HeroNew from "../component/HeroNew";
 import Description from "../component/Description";
 import Judges from "../component/Judges";
 import Timeline from "../component/Timeline";
@@ -12,7 +13,8 @@ const Homepage = () => {
   return (
     <div className="homepage">
       <GlobalNavbar active="homepage" />
-      <Hero />
+      {/* <Hero /> */}
+      <HeroNew />
       <Description />
       <Judges />
       <Timeline />
