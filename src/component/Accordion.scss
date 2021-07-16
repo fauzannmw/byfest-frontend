@@ -14,13 +14,17 @@
     display: flex;
     align-items: center;
     border: 11px solid #354c3c;
+    border-bottom: none;
     outline: none;
     transition: background-color 0.6s ease;
   }
 
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .accordion:hover,
+  .accordion:hover {
+    background-color: #dea450;
+  }
   .active {
+    border: 11px solid #354c3c;
     background-color: #dea450;
   }
 
@@ -40,5 +44,11 @@
     background-color: white;
     overflow: auto;
     transition: max-height 0.6s ease;
+  }
+}
+
+.accordion__section:last-child {
+  .accordion {
+    border-bottom: 11px solid #354c3c;
   }
 }

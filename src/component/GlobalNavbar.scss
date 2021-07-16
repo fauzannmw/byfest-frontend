@@ -1,54 +1,56 @@
 @import "../App.scss";
 
-.global-navbar{
-    .navbar-custom{
+.global-navbar {
+  .sidebar {
+    display: none;
+  }
+  .navbar-custom {
+    background-color: $kuning;
+    padding: 5px 0px;
+    .container-fluid {
+      padding: 0 50px;
+      .navbar-logo {
+        background-image: url("../assets/image/byfest_hijau.png");
+        background-size: cover;
+        height: 100px;
+        width: 90px;
+      }
+      .navbar-button {
         background-color: $kuning;
-        padding: 5px 0px;
-        .container{
-            padding-left: 0;
-            padding-right: 0;
-            .navbar-logo{
-                background-image: url('../assets/image/byfest_hijau.png');
-                background-size: cover;
-                height: 100px;
-                width: 90px;
-            }
-            .navbar-button{
-                background-color: $kuning;
-                color: $hijau;
-                font-family: "Karla-Regular";
-                font-size: 20px;
-                border: none;
-                border-radius: 11px;
-                padding: 10px 40px;
-                margin: 0px 15px;
-                transition: 0.2s;
-            }
-            .navbar-button.true{
-                background-color: $hijau;
-                color: $kuning;
-                &:hover{
-                    background-color: $hijauTua;
-                    box-shadow: 0px 0px 19px -5px rgba($hijauTua,0.45);
-                }
-            }
-            .navbar-button.false{
-                background-color: $kuning;
-                color: $hijau;
-                &:hover{
-                    background-color: $kuningTua;
-                    box-shadow: 0px 0px 19px -5px rgba($kuningTua,0.45);
-                }
-            }
-            .navbar-button.submission{
-                background-color: $oranye;
-                color: $kuning;
-                margin-right: 0;
-                &:hover{
-                    background-color: $oranyeTua;
-                    box-shadow: 0px 0px 19px -5px rgba($oranyeTua,0.45);
-                }
-            }
+        color: $hijau;
+        font-family: "Karla-Regular";
+        font-size: 20px;
+        border: none;
+        border-radius: 11px;
+        padding: 10px 40px;
+        margin: 0px 15px;
+        transition: 0.2s;
+      }
+      .navbar-button.true {
+        background-color: $hijau;
+        color: $kuning;
+        &:hover {
+          background-color: $hijauTua;
+          box-shadow: 0px 0px 19px -5px rgba($hijauTua, 0.45);
         }
+      }
+      .navbar-button.false {
+        background-color: $kuning;
+        color: $hijau;
+        &:hover {
+          background-color: $kuningTua;
+          box-shadow: 0px 0px 19px -5px rgba($kuningTua, 0.45);
+        }
+      }
+      .navbar-button.submission {
+        background-color: $oranye;
+        color: $kuning;
+        margin-right: 0;
+        &:hover {
+          background-color: $oranyeTua;
+          box-shadow: 0px 0px 19px -5px rgba($oranyeTua, 0.45);
+        }
+      }
     }
+  }
 }

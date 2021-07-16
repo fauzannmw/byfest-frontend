@@ -1,36 +1,20 @@
-import React, { useState } from "react";
-import { Container, Jumbotron, Row, Col } from "react-bootstrap";
-import bgImage from "../assets/Jumbotron-Byfest.png";
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import { Parallax } from "react-parallax";
+import bgImage from "../assets/image/Jumbotron-Byfest.jpg";
 import logoUtama from "../assets/image/byfest_kuning.png";
 import "./Hero.scss";
-import { useEffect } from "react";
-
 
 const Hero = () => {
-  const [offsetY, setOffSetY] = useState(0);
-  const handleScroll = () => setOffSetY(window.pageYOffset);
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
   return (
-    <div
-      className="hero"
-      style={{ transform: `translateY(${offsetY * 0.5}px)` }}
-    >
-      <Container>
+    <Parallax bgImage={bgImage} strength={400}>
+      <div className="hero">
         {/* className="container-hero" */}
-        {/* <img src={bgImage} alt="" /> */}
         <img src={logoUtama} alt="" style={{ height: "265px" }} />
-        <Row className="justify-content-md-center">
-          <Col md="auto">
-            <h1>BRAWIJAYA MOVIE FESTIVAL</h1>
-          </Col>
-        </Row>
+        <h1>BRAWIJAYA FILM FESTIVAL</h1>
         <p>19 - 20 Oktober 2021</p>
-      </Container>
-    </div>
+      </div>
+    </Parallax>
   );
 };
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Jumbotron, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import Accordion from "./Accordion";
 
 import "./Faq.scss";
