@@ -1,0 +1,54 @@
+.judges {
+  color: #354c3c;
+}
+
+.judges .card {
+  border: none;
+  text-align: center;
+}
+
+.card .card-title {
+  font-family: "Butler";
+  font-size: 38px;
+  letter-spacing: 20px;
+}
+
+.judges h1 {
+  font-family: "Butler";
+  font-size: 50px;
+  letter-spacing: 20px;
+}
+
+.judges h2 {
+  font-family: "Butler";
+  font-size: 38px;
+  letter-spacing: 20px;
+}
+
+.judges p {
+  font-family: "Karla-Bold";
+  font-size: 20px;
+  letter-spacing: 0.49em;
+}
+
+.judges img {
+  width: 200px;
+  margin: 10px auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .card .card-title {
+    font-size: 30px;
+    letter-spacing: 12px;
+  }
+
+  .judges h1 {
+    font-size: 38px;
+    letter-spacing: 14px;
+  }
+
+  .judges h2 {
+    font-size: 30px;
+    letter-spacing: 14px;
+  }
+}

@@ -1,20 +1,20 @@
 import React from "react";
 import { Container, Jumbotron, Row, Col, Card } from "react-bootstrap";
 import judges1 from "../assets/image/judges_1.jpg";
-import "./Judges.scss";
+import "./Judges.css";
 
 const judges = () => {
   return (
     <div className="judges">
       <Container>
-        <Row className="justify-content-md-center">
+        <Row className="justify-content-center">
           <h1>B Y F E S T</h1>
         </Row>
-        <Row className="justify-content-md-center">
+        <Row className="justify-content-center">
           <h2>J U D G E S</h2>
         </Row>
-        <Row className="justify-content-md-center">
-          <Col md={6}>
+        <Row className=" d-flex justify-content-center">
+          <Col md={6} className="d-flex justify-content-center">
             <Card style={{ width: "22rem" }}>
               <Card.Img variant="top" src={judges1} />
               <Card.Body>
@@ -23,7 +23,7 @@ const judges = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={6}>
+          <Col md={6} className=" d-flex justify-content-center">
             <Card style={{ width: "22rem" }}>
               <Card.Img variant="top" src={judges1} />
               <Card.Body>
@@ -32,7 +32,7 @@ const judges = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={6}>
+          <Col md={6} className=" d-flex justify-content-center">
             <Card style={{ width: "22rem" }}>
               <Card.Img variant="top" src={judges1} />
               <Card.Body>

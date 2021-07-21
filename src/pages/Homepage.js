@@ -1,5 +1,4 @@
 import Hero from "../component/Hero";
-// import HeroNew from "../component/HeroNew";
 import Igtv from "../component/Igtv";
 import Description from "../component/Description";
 import Judges from "../component/Judges";
@@ -13,13 +12,11 @@ import GlobalFooter from "../component/GlobalFooter";
 const Homepage = () => {
   return (
     <div className="homepage">
-      <GlobalNavbar active="homepage" />
+      {/* <GlobalNavbar active="homepage" /> */}
       <Hero />
-      {/* <HeroNew /> */}
-      <Igtv />
       <Description />
       <Judges />
-      <Timeline />
+      {/* <Timeline /> */}
       <Faq />
       <Announcement />
       <Sponsor />

@@ -1,15 +1,27 @@
 @import "~bootstrap/scss/bootstrap";
 
-$putih: #F5F8F3;
-$kuning: #DEA450;
+$putih: #f5f8f3;
+$kuning: #dea450;
 $kuningTua: #ce974a;
-$oranye: #9B461F;
+$oranye: #9b461f;
 $oranyeTua: #8c401d;
-$merah: #6A1D2F;
-$hijau: #354C3C;
+$merah: #6a1d2f;
+$hijau: #354c3c;
 $hijauTua: #2d4233;
-$ungu: #42354C;
-$hitam: #1C1A17;
+$ungu: #42354c;
+$hitam: #1c1a17;
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
 
 /* .App {
   text-align: center;

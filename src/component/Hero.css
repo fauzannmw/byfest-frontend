@@ -1,0 +1,31 @@
+.hero {
+  background-size: cover;
+  height: 800px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero h1 {
+  font-family: "Butler";
+  color: #dea450;
+  font-size: 80px;
+}
+
+.hero p {
+  font-family: "Karla";
+  color: #dea450;
+  font-size: 34px;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 50px;
+  }
+
+  .hero p {
+    font-size: 30px;
+  }
+}
