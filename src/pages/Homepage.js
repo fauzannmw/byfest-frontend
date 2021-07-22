@@ -12,11 +12,11 @@ import GlobalFooter from "../component/GlobalFooter";
 const Homepage = () => {
   return (
     <div className="homepage">
-      {/* <GlobalNavbar active="homepage" /> */}
+      <GlobalNavbar active="homepage" />
       <Hero />
       <Description />
       <Judges />
-      {/* <Timeline /> */}
+      <Timeline />
       <Faq />
       <Announcement />
       <Sponsor />
