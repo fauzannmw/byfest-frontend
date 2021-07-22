@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/byfest-frontend/static/css/main.827d5e48.chunk.css",
+    "main.js": "/byfest-frontend/static/js/main.606e43a5.chunk.js",
+    "main.js.map": "/byfest-frontend/static/js/main.606e43a5.chunk.js.map",
+    "runtime-main.js": "/byfest-frontend/static/js/runtime-main.ea55363c.js",
+    "runtime-main.js.map": "/byfest-frontend/static/js/runtime-main.ea55363c.js.map",
+    "static/js/2.cd3b49f8.chunk.js": "/byfest-frontend/static/js/2.cd3b49f8.chunk.js",
+    "static/js/2.cd3b49f8.chunk.js.map": "/byfest-frontend/static/js/2.cd3b49f8.chunk.js.map",
+    "index.html": "/byfest-frontend/index.html",
+    "static/css/main.827d5e48.chunk.css.map": "/byfest-frontend/static/css/main.827d5e48.chunk.css.map",
+    "static/js/2.cd3b49f8.chunk.js.LICENSE.txt": "/byfest-frontend/static/js/2.cd3b49f8.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/byfest-frontend/static/media/Karla-Regular.6d937d4f.ttf",
+    "static/media/Jumbotron-Byfest.638daabb.jpg": "/byfest-frontend/static/media/Jumbotron-Byfest.638daabb.jpg",
+    "static/media/GlobalNavbar.scss": "/byfest-frontend/static/media/byfest_hijau.121b5a62.png",
+    "static/media/byfest_kuning.a26a57a6.png": "/byfest-frontend/static/media/byfest_kuning.a26a57a6.png",
+    "static/media/description.e53b0940.jpg": "/byfest-frontend/static/media/description.e53b0940.jpg",
+    "static/media/judges_1.27ff745c.jpg": "/byfest-frontend/static/media/judges_1.27ff745c.jpg",
+    "static/media/pengumuman-tree.8513e38b.png": "/byfest-frontend/static/media/pengumuman-tree.8513e38b.png",
+    "static/media/Catalog.scss": "/byfest-frontend/static/media/pengumuman.43c7e0fc.jpg",
+    "static/media/poster.b8dcf213.jpg": "/byfest-frontend/static/media/poster.b8dcf213.jpg",
+    "static/media/screenshot.62b8e050.jpg": "/byfest-frontend/static/media/screenshot.62b8e050.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ea55363c.js",
+    "static/js/2.cd3b49f8.chunk.js",
+    "static/css/main.827d5e48.chunk.css",
+    "static/js/main.606e43a5.chunk.js"
+  ]
+}
