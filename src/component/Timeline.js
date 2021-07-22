@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Jumbotron, Row, Col } from "react-bootstrap";
 import treeImage from "../assets/image/pengumuman-tree.png";
-import "./Timeline.css";
+import "./Timeline.scss";
 
 const timeline = () => {
   return (

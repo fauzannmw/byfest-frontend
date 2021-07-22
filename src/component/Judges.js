@@ -1,7 +1,7 @@
 import React from "react";
-import { Container, Jumbotron, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import judges1 from "../assets/image/judges_1.jpg";
-import "./Judges.css";
+import "./Judges.scss";
 
 const judges = () => {
   return (

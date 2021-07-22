@@ -1,12 +1,12 @@
 @import "../App.scss";
 
 .judges {
+  color: $hijau;
   .card {
     border: none;
     text-align: center;
     .card-title {
       font-family: "Butler";
-      color: $hijau;
       font-size: 38px;
       letter-spacing: 20px;
     }
@@ -14,21 +14,18 @@
 
   h1 {
     font-family: "Butler";
-    color: $hijau;
     font-size: 50px;
     letter-spacing: 20px;
   }
 
   h2 {
     font-family: "Butler";
-    color: $hijau;
     font-size: 38px;
     letter-spacing: 20px;
   }
 
   p {
     font-family: "Karla-Bold";
-    color: $hijau;
     font-size: 20px;
     letter-spacing: 0.49em;
   }
@@ -36,5 +33,30 @@
   img {
     width: 200px;
     margin: 10px auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .judges {
+    margin: 50px 0;
+    .card-title {
+      font-size: 30px;
+      letter-spacing: 12px;
+    }
+
+    img {
+      width: 50%;
+    }
+
+    h1 {
+      font-size: 38px;
+      letter-spacing: 14px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 30px;
+      letter-spacing: 14px;
+    }
   }
 }

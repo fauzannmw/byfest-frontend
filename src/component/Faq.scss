@@ -25,3 +25,12 @@
     padding: 18px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .faq {
+    h1 {
+      font-size: 44px;
+      margin-bottom: 20px;
+    }
+  }
+}

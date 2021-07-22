@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Jumbotron, Row, Col } from "react-bootstrap";
-import "./Announcement.css";
+import "./Announcement.scss";
 
 const Announcement = () => {
   return (

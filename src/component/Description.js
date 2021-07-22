@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import descImage from "../assets/image/description.jpg";
-import "./Description.css";
+import "./Description.scss";
 
 const Description = () => {
   return (

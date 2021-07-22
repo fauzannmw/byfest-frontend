@@ -2,8 +2,6 @@
 
 .sponsor {
   margin: 100px auto;
-  .container {
-  }
 
   h1 {
     font-family: "Butler";
@@ -15,5 +13,20 @@
   img {
     width: 240px;
     margin: 50px auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sponsor {
+    margin: 50px auto;
+    h1 {
+      font-size: 40px;
+      letter-spacing: 6px;
+    }
+
+    img {
+      width: 120px;
+      margin: 20px auto;
+    }
   }
 }

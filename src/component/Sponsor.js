@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Jumbotron, Row, Col } from "react-bootstrap";
 import img1 from "../assets/image/sponsor_icon_1.png";
-import "./Sponsor.css";
+import "./Sponsor.scss";
 
 const Sponsor = () => {
   return (

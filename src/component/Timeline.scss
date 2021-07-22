@@ -17,3 +17,20 @@
     margin: 100px 0;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .timeline {
+    margin: 50px auto;
+
+    h1 {
+      font-size: 40px;
+      letter-spacing: 4px;
+    }
+
+    img {
+      width: 90%;
+      margin-top: 30px;
+      margin-bottom: 0;
+    }
+  }
+}
