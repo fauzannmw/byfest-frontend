@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import judges1 from "../assets/image/judges_1.jpg";
+import judges1 from "../../assets/image/judges_1.jpg";
 import "./Judges.scss";
 
 const judges = () => {

@@ -1,8 +1,7 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import { Parallax } from "react-parallax";
-import bgImage from "../assets/image/Jumbotron-Byfest.jpg";
-import logoUtama from "../assets/image/byfest_kuning.png";
+import bgImage from "../../assets/image/Jumbotron-Byfest.jpg";
+import logoUtama from "../../assets/image/byfest_kuning.png";
 import "./Hero.scss";
 
 const Hero = () => {

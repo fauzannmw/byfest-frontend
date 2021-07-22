@@ -1,4 +1,4 @@
-@import "../App.scss";
+@import "../../App.scss";
 // $bg-img: url("../assets/image/Jumbotron-Byfest.jpg");
 
 .hero {
@@ -31,6 +31,7 @@
 
 @media only screen and (max-width: 768px) {
   .hero {
+    max-height: 700px;
     img {
       width: 60%;
     }
