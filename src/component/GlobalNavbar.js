@@ -39,9 +39,7 @@ const GlobalNavbar = (props) => {
               <Link to="/">
                 <img
                   src={LogoNavbar}
-                  width="70"
-                  height="70"
-                  className="d-inline-block align-top"
+                  className="d-inline-block align-top w-75"
                   alt="Brawijaya Film Festival"
                 />
               </Link>
@@ -54,7 +52,7 @@ const GlobalNavbar = (props) => {
               </Link>
               <Link to="/featured">
                 <button className={`navbar-button ${featured}`}>
-                  Featured
+                  Program
                 </button>
               </Link>
               <a target="_blank" href="https://forms.gle/pSu4boUPGVjWUR8S8">

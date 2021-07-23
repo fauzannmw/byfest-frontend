@@ -13,7 +13,7 @@ import "./Homepage.scss";
 const Homepage = () => {
   return (
     <div className="homepage">
-      {/* <GlobalNavbar active="homepage" /> */}
+      <GlobalNavbar active="homepage" />
       <Hero />
       <div className="content">
         <Description />

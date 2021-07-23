@@ -6,10 +6,10 @@ import "./Hero.scss";
 
 const Hero = () => {
   return (
-    <Parallax bgImage={bgImage} strength={400}>
+    <Parallax bgImage={bgImage} strength={600}>
       <div className="hero">
         <img src={logoUtama} alt="" />
-        <h1>BRAWIJAYA MOVIE FESTIVAL</h1>
+        <h1>BRAWIJAYA FILM FESTIVAL</h1>
         <p>19 - 20 Oktober 2021</p>
       </div>
     </Parallax>
