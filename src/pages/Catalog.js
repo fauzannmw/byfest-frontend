@@ -1,20 +1,13 @@
 import { useEffect, useState } from "react";
-import { Tab, Tabs, Button, Navbar, Nav,Row, Col, Modal, Spinner } from "react-bootstrap";
-import { Link } from 'react-router-dom';
+import { Tab, Tabs,Row, Col, Modal, Spinner } from "react-bootstrap";
 import Sonnet from "../component/Sonnet";
-import GlobalNavbar from "../component/GlobalNavbar";
-import GlobalFooter from "../component/GlobalFooter";
-import GambarPengumuman from "../assets/image/pengumuman.jpg";
-import LogoNavbar from "../assets/image/byfest_hijau.png";
 import "./Catalog.scss";
 import post from '../api/post';
-import axios from "axios";
-import { setupCache } from "axios-cache-adapter";
 import CloseButton from '@material-ui/icons/Close'
 import 'moment/locale/id';
 import moment from "moment";
 import { Helmet } from "react-helmet";
-var parseString = require('xml2js').parseString;
+// var parseString = require('xml2js').parseString;
 
 const Catalog = () => {
     const catalogs = [
