@@ -6,6 +6,7 @@ import "./Featured.scss";
 import Poster from "../assets/image/poster.jpg";
 import Screenshot from "../assets/image/screenshot.jpg";
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 import CloseButton from '@material-ui/icons/Close'
 
 const Featured = () => {
@@ -21,7 +22,7 @@ const Featured = () => {
             judul: "A Night of Nirvana",
             direktor: "Arga"
         },{
-            judul: "The Martion",
+            judul: "The Martian",
             direktor: "Arga"
         }
     ]
@@ -34,7 +35,11 @@ const Featured = () => {
     return(
         <div className="featured">
 
-            <GlobalNavbar active="featured" />
+            <Helmet>
+                <title>Featured Films</title>
+            </Helmet>
+
+            {/* <GlobalNavbar active="featured" /> */}
 
             <div className="content">
                 <div className="container">
@@ -149,7 +154,7 @@ const Featured = () => {
                 </div>
             </div> 
 
-           <GlobalFooter />
+           {/* <GlobalFooter /> */}
 
         </div>
     )

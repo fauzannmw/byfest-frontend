@@ -12,12 +12,15 @@ const GlobalNavbar = (props) => {
     const [featured, setFeatured] = useState(false);
 
     useEffect(async () => {
-        if(active == 'catalog'){
+        console.log(active);
+        if(active == '/catalog'){
             setCatalog(true);
-        } else{
+            setFeatured(false);
+        } else if (active == '/featured'){
             setFeatured(true);
+            setCatalog(false);
         }
-    },[])
+    },[active])
 
     return(
         <div className="global-navbar">
