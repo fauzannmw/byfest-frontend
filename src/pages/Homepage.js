@@ -9,11 +9,15 @@ import Sponsor from "../component/Homepage/Sponsor";
 import GlobalNavbar from "../component/GlobalNavbar";
 import GlobalFooter from "../component/GlobalFooter";
 import "./Homepage.scss";
+import { Helmet } from "react-helmet";
 
 const Homepage = () => {
   return (
     <div className="homepage">
-      <GlobalNavbar active="homepage" />
+      {/* <GlobalNavbar active="homepage" /> */}
+      <Helmet>
+          <title>Home</title>
+      </Helmet>
       <Hero />
       <div className="content">
         <Description />
@@ -23,7 +27,7 @@ const Homepage = () => {
         <Announcement />
         <Sponsor />
       </div>
-      <GlobalFooter />
+      {/* <GlobalFooter /> */}
     </div>
   );
 };

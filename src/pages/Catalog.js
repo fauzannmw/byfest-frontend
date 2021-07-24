@@ -11,6 +11,9 @@ import post from '../api/post';
 import axios from "axios";
 import { setupCache } from "axios-cache-adapter";
 import CloseButton from '@material-ui/icons/Close'
+import 'moment/locale/id';
+import moment from "moment";
+import { Helmet } from "react-helmet";
 var parseString = require('xml2js').parseString;
 
 const Catalog = () => {
@@ -75,7 +78,8 @@ const Catalog = () => {
 
     useEffect(async () => {
         // const resPost = await post.get(`14276`);
-        await post.get(`sheet1`
+        // await post.get(`sheet1`
+        await post.get(`exec`
         ).then(async (res) => {
             // for(let i = 0; i < res.data.length; i++){  
             //     // // fotoPosting[i] = "https://drive.google.com/uc?export=view&id=" + res.data[i].Foto.substring(33,80);
@@ -87,6 +91,8 @@ const Catalog = () => {
 
             // }
             setPostingan(res.data);
+            moment.locale('id');
+            // console.log(res.data);
             const length = await post.cache.length();
             console.log('Cache store length:', length);
         });
@@ -103,11 +109,14 @@ const Catalog = () => {
     return(
         <div className="catalog">
 
-            <GlobalNavbar active="catalog" />         
+            {/* <GlobalNavbar active="catalog" />          */}
+            <Helmet>
+                <title>Catalog Event</title>
+            </Helmet>
 
             <div className="content">
                 <div className="container">
-                    <h1>CATALOG EVENT</h1>
+                    <h1 className="catalog-h1">CATALOG EVENT</h1>
                     <Tabs defaultActiveKey="Roadshow" transition={false} id="noanim-tab-example">
                         <Tab eventKey={ catalogs[0].key } title={ catalogs[0].key }>
                             <Sonnet header={ catalogs[0].header } content={ catalogs[0].content } />
@@ -120,16 +129,16 @@ const Catalog = () => {
                         </Tab>
                     </Tabs>
                     
-                    <h1>PENGUMUMAN</h1>
+                    <h1 className="pengumuman-h1">PENGUMUMAN</h1>
                     {postingan.length ?
                         postingan.slice(0).reverse().map((posting, idx) => (
-                            <div className="pengumuman" key={posting.Judul}>
+                            <div className="pengumuman" key={posting.Timestamp}>
                                 { handleSubstringFoto(posting.Foto, idx) }
                                 <div className="card-pengumuman">
                                     
                                     <Row>
                                         <Col xs={12} md={5} lg={5} className="kiri">
-                                            { spinnerFotoPosting[idx] == true ?
+                                            {/* { spinnerFotoPosting[idx] == true ?
                                             <img 
                                                 src={ fotoPosting[idx] }
                                                 className="preview-image d-inline-block align-top"
@@ -138,33 +147,48 @@ const Catalog = () => {
                                             <div className="spinner-wrapper">
                                                 <Spinner animation="border" className="spinner" size="md" />
                                             </div> 
-                                            }
+                                            } */}
+                                            <img 
+                                                src={ fotoPosting[idx] }
+                                                className="preview-image d-inline-block align-top"
+                                                alt="preview" 
+                                            />
                                         </Col>
                                         <Col xs={12} md={7} lg={7} className="kanan">
                                             <div className="kanan-inner">
                                                 <h3>{ posting.Judul }</h3>
-                                                <p className="tanggal">{ posting.Timestamp }</p>
+                                                <p className="tanggal">{ moment(posting.Timestamp).format('dddd' + ", " + 'LL') }</p>
+                                                {/* { handleCardParagraph() } */}
                                                 <p>{ posting.Caption.substring(0, 343) + "..." }</p>
-                                                <button className="button-pengumuman" onClick={ (e) => handleShow(posting.Judul)}>
+                                                <button className="button-pengumuman" onClick={ (e) => handleShow(posting.Timestamp)}>
                                                     View More
                                                 </button>
                                             </div>
                                         </Col>
                                     </Row>
                                 </div>
-                                    <Modal className="modal-pengumuman" show={show == `${posting.Judul}`} onHide={handleClose}>
+                                    <Modal className="modal-pengumuman" show={show == `${posting.Timestamp}`} onHide={handleClose}>
                                         <div className="modal-wrapper">
-                                            <Modal.Header >
+                                            {/* <Modal.Header style={{backgroundImage: `url(${ fotoPosting[idx] })`}}> */}
+                                            <Modal.Header>
                                                 {/* <Modal.Title></Modal.Title> */}
-                                                <div className="tombol-tutup">
-                                                    <a onClick={handleClose}>
-                                                        <CloseButton />
-                                                    </a>
-                                                </div>
+                                                    <div className="modal-preview-image-wrapper">
+                                                        <img 
+                                                            src={ fotoPosting[idx] }
+                                                            className="modal-preview-image d-inline-block align-top"
+                                                            alt="preview"
+                                                        />
+                                                        <div className="tombol-tutup">
+                                                            <a onClick={handleClose}>
+                                                                <CloseButton />
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                
                                             </Modal.Header>
                                             <Modal.Body>
                                                 <h3>{ posting.Judul }</h3>
-                                                <p className="tanggal">{ posting.Timestamp }</p>
+                                                <p className="tanggal">{ moment(posting.Timestamp).format('dddd' + ", " + 'LL') }</p>
                                                 <p>{ posting.Caption }</p>
                                             </Modal.Body>
                                         </div>
@@ -178,7 +202,7 @@ const Catalog = () => {
                 </div>
             </div>   
 
-            <GlobalFooter />
+            {/* <GlobalFooter /> */}
 
         </div>
     )

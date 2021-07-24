@@ -4,11 +4,22 @@
     background-color: #E5E5E5;
     
     .content{
+        padding-bottom: 50px;
         h1{
             font-family: "Butler";
             color: $hijau;
-            margin: 50px 0;
+            // margin: 50px 0;
+            margin: 0;
+            padding: 50px 0;
             font-size: 64px;
+        }
+
+        .catalog-h1{
+            margin-bottom: 18px;
+        }
+
+        .pengumuman-h1{
+            padding-bottom: 0;
         }
         
         .nav-link{
@@ -58,6 +69,7 @@
             align-items: center;
             height: 82px;
         }
+
         .sonnet{
             background-color: $kuning;
             border: 5px solid $hijau;
@@ -78,7 +90,7 @@
             background-color: $hijau;
             padding: 0px 15px 0px 15px;
             border: 5px solid $hijau;
-            margin-bottom: 50px;
+            margin-top: 50px;
             .kiri{
                 // background-image: url('../assets/image/pengumuman.jpg');
                 // background-size: cover;
@@ -91,6 +103,9 @@
                     object-fit: cover;
                     max-width: 458.328px;
                     min-width: 458.328px;
+                    max-height: 458.328px;
+                    min-height: 458.328px;
+                    
                     // max-height: 204px;
                     width: auto;
                     height: auto;
@@ -150,7 +165,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            margin-bottom: 50px;
+            margin-top: 50px;
             .spinner{
                 width: 60px;
                 height: 60px;
@@ -178,18 +193,38 @@
             border: 5px solid $hijau;
             background-color: $hijau;
             .modal-header{
-                background-image: url("../assets/image/pengumuman.jpg");
+                // background-image: url("../assets/image/pengumuman.jpg");
                 background-size: cover;
                 background-repeat: no-repeat;
-                height: 250px;
+                height: 300px;
+                max-width: 490px;
                 border-radius: 0;
                 border-bottom: 1px solid $kuning;
-                flex-direction: row-reverse;
+                flex-direction: row;
+
+                padding: 0;
+                .modal-preview-image-wrapper{
+                    display: flex;
+                    .modal-preview-image{
+                        object-fit: cover;
+                        max-width: 490px;
+                        min-width: 490px;
+                        max-height: 300px;
+                        min-height: 300px;
+                        
+                        // max-height: 204px;
+                        width: auto;
+                        height: auto;
+                    }
+                }
+                
                 h1{
                     font-family: "Karla-Bold";
                 }
                 .tombol-tutup{
                     text-align: right;
+                    margin-top: 10px;
+                    margin-left: -50px;
                     a{
                         &:hover{
                             cursor: pointer;
