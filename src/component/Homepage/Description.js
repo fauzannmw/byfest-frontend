@@ -38,7 +38,7 @@ const Description = () => {
             <img src={descImage} className="w-100 " alt="" />
           </div>
           <div className="col-md-8 desc-text">
-            <h1>APA ITU BRAWIJAYA MOVIE FESTIVAL</h1>
+            <h1>APA ITU BRAWIJAYA FILM FESTIVAL</h1>
             <p>
               Be sure to test any solution across different Reader preferences.
               A site visitor may have their browser set to open the PDF in
