@@ -29,7 +29,7 @@ const GlobalNavbar = (props) => {
         <div className="global-navbar">
             <div className="navbar-custom">
                 <div className="container">
-                <Navbar variant="dark">
+                <Navbar variant="dark" expand="lg">
                     <Navbar.Brand href="#home" className="mr-auto">
                         {/* <div className="navbar-logo"></div> */}
                         <Link to="/">
@@ -42,6 +42,7 @@ const GlobalNavbar = (props) => {
                           />
                         </Link>
                     </Navbar.Brand>
+                    
                     <Nav>
                         <Link to="/catalog">
                             <button className={`navbar-button ${ catalog }`}>Catalog Event</button>     

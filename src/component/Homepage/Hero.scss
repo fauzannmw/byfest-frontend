@@ -11,7 +11,7 @@
 
   img {
     width: 270px;
-    box-shadow: 5px 10px #888888;
+    
   }
 
   h1 {
@@ -19,13 +19,13 @@
     color: $kuning;
     font-size: 60px;
     width: 40%;
-  }
+text-shadow: -1px 3px 2px #000000;  }
 
   p {
     font-family: "Karla";
     color: $kuning;
     font-size: 28px;
-  }
+text-shadow: -1px 3px 2px #000000;  }
 }
 
 @media only screen and (max-width: 768px) {
