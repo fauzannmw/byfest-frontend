@@ -36,7 +36,7 @@ const GlobalNavbar = (props) => {
                           <img
                               src={ LogoNavbar }
                               // width="70"
-                              height="70"
+                              height="80"
                               className="d-inline-block align-top"
                               alt="Brawijaya Film Festival"
                           />
