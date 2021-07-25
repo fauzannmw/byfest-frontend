@@ -36,14 +36,14 @@ const Featured = () => {
         <div className="featured">
 
             <Helmet>
-                <title>Featured Films</title>
+                <title>Program</title>
             </Helmet>
 
             {/* <GlobalNavbar active="featured" /> */}
 
             <div className="content">
                 <div className="container">
-                    <h1>FEATURED FILMS</h1>
+                    <h1>PROGRAM</h1>
                     <Row xs={1} md={2} className="g-4">
                         { posterFilms.map((posterFilm) => (
                             <Col xs={12} md={6} lg={4} className="column">

@@ -48,7 +48,7 @@ const GlobalNavbar = (props) => {
                             <button className={`navbar-button ${ catalog }`}>Catalog Event</button>     
                         </Link>
                         <Link to="/featured">
-                            <button className={`navbar-button ${ featured }`}>Featured</button>
+                            <button className={`navbar-button ${ featured }`}>Program</button>
                         </Link>
                         <a target="_blank" href="https://forms.gle/pSu4boUPGVjWUR8S8">
                             <button className="navbar-button submission">Film Submission</button>
