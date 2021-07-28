@@ -1,27 +1,3 @@
-// import React, { useState } from "react";
-// import "./Accordion.css";
-
-// const [selected, setSelected] = useState(null);
-// const toggle = (i) => {
-//   if (selected == i) {
-//     return setSelected(null);
-//   }
-
-//   setSelected(i);
-// };
-
-// const Accordion = () => {
-//   return (
-//     <div className="wrapper">
-//       <div className="accordion">
-
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Accordion;
-
 import React, { useState, useRef } from "react";
 import Chevron from "./Chevron";
 
