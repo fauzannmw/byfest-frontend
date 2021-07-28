@@ -1,7 +1,17 @@
 @import "../../App.scss";
+.card {
+  border: none;
+  text-align: center;
+  .card-title {
+    font-family: "Butler";
+    font-size: 38px;
+    letter-spacing: 20px;
+  }
+}
 
 .judges {
   color: $hijau;
+  margin: 100px 0;
   .card {
     border: none;
     text-align: center;
@@ -50,12 +60,12 @@
 
     h1 {
       font-size: 38px;
-      letter-spacing: 14px;
+      letter-spacing: 10px;
       margin-bottom: 20px;
     }
 
     h2 {
-      font-size: 30px;
+      font-size: 28px;
       letter-spacing: 14px;
     }
   }

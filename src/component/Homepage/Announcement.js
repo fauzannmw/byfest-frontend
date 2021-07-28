@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Jumbotron, Row, Col } from "react-bootstrap";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import "./Announcement.scss";
 
 const Announcement = () => {
@@ -12,7 +12,7 @@ const Announcement = () => {
         </Row>
         <Row className="justify-content-center">
           <Link to="/catalog">
-          <button>Lihat Catalog Event</button>
+            <button>Lihat Catalog Event</button>
           </Link>
         </Row>
       </Container>

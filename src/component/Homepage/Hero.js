@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <Parallax bgImage={bgImage} strength={600}>
+    <Parallax bgImage={bgImage} strength={800}>
       <div className="hero">
         <img src={logoUtama} alt="" />
         <h1>BRAWIJAYA FILM FESTIVAL</h1>
