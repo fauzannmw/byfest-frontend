@@ -14,20 +14,22 @@ import { Helmet } from "react-helmet";
 const Homepage = () => {
   return (
     <div className="homepage">
-      {/* <GlobalNavbar active="homepage" /> */}
-      <Helmet>
+      <div className="container">
+        {/* <GlobalNavbar active="homepage" /> */}
+        <Helmet>
           <title>Home</title>
-      </Helmet>
-      <Hero />
-      <div className="content">
-        <Description />
-        <Judges />
-        <Timeline />
-        <Faq />
-        <Announcement />
-        <Sponsor />
+        </Helmet>
+        <Hero />
+        <div className="content">
+          <Description />
+          <Judges />
+          <Timeline />
+          <Faq />
+          <Announcement />
+          <Sponsor />
+        </div>
+        {/* <GlobalFooter /> */}
       </div>
-      {/* <GlobalFooter /> */}
     </div>
   );
 };
