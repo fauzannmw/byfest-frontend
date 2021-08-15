@@ -7,7 +7,7 @@ import CloseButton from '@material-ui/icons/Close'
 import 'moment/locale/id';
 import moment from "moment";
 import { Helmet } from "react-helmet";
-// var parseString = require('xml2js').parseString;
+var parseString = require('xml2js').parseString;
 
 const Catalog = () => {
     const catalogs = [
