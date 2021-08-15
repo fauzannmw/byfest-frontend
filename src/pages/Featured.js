@@ -7,29 +7,26 @@ import Poster from "../assets/image/poster.jpg";
 import Screenshot from "../assets/image/screenshot.jpg";
 import { useState } from "react";
 import { Helmet } from "react-helmet";
-import CloseButton from "@material-ui/icons/Close";
+import CloseButton from '@material-ui/icons/Close'
 
 const Featured = () => {
   const posterFilms = [
-    {
-      judul: "LION",
-      direktor: "Arga",
-    },
-    {
-      judul: ".fana",
-      direktor: "Arga",
-    },
-    {
-      judul: "A Night of Nirvana",
-      direktor: "Arga",
-    },
-    {
-      judul: "The Martian",
-      direktor: "Arga",
-    },
-  ];
-  const [postingan, setPostingan] = useState([]);
-  const [show, setShow] = useState("");
+        {
+            judul: "LION",
+            direktor: "Arga"
+        },{
+            judul: ".fana",
+            direktor: "Arga"
+        },{
+            judul: "A Night of Nirvana",
+            direktor: "Arga"
+        },{
+            judul: "The Martian",
+            direktor: "Arga"
+        }
+    ]
+    const [postingan, setPostingan] = useState([]);
+    const [show, setShow] = useState('');
 
   const handleClose = () => setShow(false);
   const handleShow = (id) => setShow(id);
