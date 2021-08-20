@@ -6,7 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export default class judges extends Component {
+export default class kurator extends Component {
   render() {
     var settings = {
       dots: true,
@@ -49,7 +49,7 @@ export default class judges extends Component {
             <h1>B Y F E S T</h1>
           </Row>
           <Row className="justify-content-center mb-5">
-            <h2>J U D G E S</h2>
+            <h2>C U R A T O R</h2>
           </Row>
           <Slider {...settings}>
             <div>

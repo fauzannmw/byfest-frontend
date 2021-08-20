@@ -2,6 +2,7 @@ import Hero from "../component/Homepage/Hero";
 import Igtv from "../component/Homepage/Igtv";
 import Description from "../component/Homepage/Description";
 import Judges from "../component/Homepage/Judges";
+import Kurator from "../component/Homepage/Kurator";
 import Timeline from "../component/Homepage/Timeline";
 import Faq from "../component/Homepage/Faq";
 import Announcement from "../component/Homepage/Announcement";
@@ -14,7 +15,6 @@ import { Helmet } from "react-helmet";
 const Homepage = () => {
   return (
     <div className="homepage">
-      {/* <div className="container"> */}
       {/* <GlobalNavbar active="homepage" /> */}
       <Helmet>
         <title>Home</title>
@@ -23,13 +23,13 @@ const Homepage = () => {
       <div className="content">
         <Description />
         <Judges />
+        <Kurator />
         <Timeline />
         <Faq />
         <Announcement />
         <Sponsor />
       </div>
       {/* <GlobalFooter /> */}
-      {/* </div> */}
     </div>
   );
 };
