@@ -17,7 +17,7 @@ const Homepage = () => {
     <div className="homepage">
       {/* <GlobalNavbar active="homepage" /> */}
       <Helmet>
-        <title>Home</title>
+      <title>Home</title>
       </Helmet>
       <Hero />
       <div className="content">
