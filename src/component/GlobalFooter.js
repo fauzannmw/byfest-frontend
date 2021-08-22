@@ -7,8 +7,18 @@ const GlobalFooter = () => {
     <div className="global-footer">
       <div className="footer">
         <div>
-          <img className="logo" src={instagram} alt="" />
-          <img className="logo" src={linkedin} alt="" />
+          <a
+            target="blank"
+            href="https://www.instagram.com/brawijayafilmfestival/"
+          >
+            <img className="logo" src={instagram} alt="" />
+          </a>
+          <a
+            target="blank"
+            href="https://www.linkedin.com/in/brawijaya-film-festival-8b668a215"
+          >
+            <img className="logo" src={linkedin} alt="" />
+          </a>
         </div>
         <h6>Made by Brawijaya Film Festival IT Developer Team, 2021</h6>
       </div>
