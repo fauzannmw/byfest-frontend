@@ -34,13 +34,15 @@ const Hero = () => {
         <img
           src={bgImage}
           alt=""
+          className="image-1"
           style={{
             position: "absolute",
             width: "100%",
+            maxHeight: "90%",
             left: "50%",
-            top: "80%",
+            top: "70%",
             bottom: "80%",
-            height: "100%",
+            height: "80%",
             objectFit: "cover",
             transform: "translate(-50%, -50%)",
             zIndex: "-1",

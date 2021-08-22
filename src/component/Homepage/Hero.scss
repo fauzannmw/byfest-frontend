@@ -58,9 +58,16 @@
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .image-1 {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .hero {
-    // height: 1000px;
+    height: 700px;
+
     .logo-utama {
       width: 40%;
     }
