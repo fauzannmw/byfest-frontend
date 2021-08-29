@@ -10,8 +10,8 @@
             color: $hijau;
             // margin: 50px 0;
             margin: 0;
-            padding: 50px 0;
-            font-size: 64px;
+            padding: 40px 0;
+            font-size: 38px;
         }
 
         .catalog-h1{
@@ -24,14 +24,14 @@
         
         .nav-link{
             font-family: "Karla-Bold";
-            font-size: 28px;
+            font-size: 24px;
             background-color: $kuning;
             color: $hijau;
             border: 5px solid $hijau;
             border-width: 5px 0px 0px 5px;
             border-radius: 0px;
-            padding-left: 60px;
-            padding-right: 60px;
+            padding-left: 20px;
+            padding-right: 20px;
             transition: 0.2s;
             &:hover{
                 background-color: $hijau;
@@ -46,6 +46,11 @@
                 border-width: 5px 5px 0px 5px;
             }
         }
+
+        .nav-item.nav-link{
+            height: 50px !important;
+        }
+
         .nav-item.nav-link.active{
             background-color: $hijau;
             border-style: solid;
@@ -55,8 +60,8 @@
             // transform: scale(1.5);
             // padding: 10px 0;
             position: relative;
-            height: 100px;
-            margin-top: -18px;
+            height: 70px !important;
+            margin-top: -20px;
             // bottom: 0px;
             display: flex;
             align-items: center;
@@ -73,15 +78,15 @@
         .sonnet{
             background-color: $kuning;
             border: 5px solid $hijau;
-            padding: 50px;
+            padding: 35px;
             h2{
                 font-family: "Butler";
                 color: $hijau;
-                font-size: 50px;
+                font-size: 28px;
             }
             p{
                 font-family: "Karla-Regular";
-                font-size: 23px;
+                font-size: 20px;
                 margin-bottom: 0px;
             }
         } 

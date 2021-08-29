@@ -2,14 +2,14 @@ import { Row, Col, Card, Image, Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import GlobalNavbar from "../component/GlobalNavbar";
 import GlobalFooter from "../component/GlobalFooter";
-import "./Featured.scss";
+import "./Program.scss";
 import Poster from "../assets/image/poster.jpg";
 import Screenshot from "../assets/image/screenshot.jpg";
 import { useState } from "react";
 import { Helmet } from "react-helmet";
 import CloseButton from '@material-ui/icons/Close'
 
-const Featured = () => {
+const Program = () => {
   const posterFilms = [
         {
             judul: "LION",
@@ -45,16 +45,6 @@ const Featured = () => {
           <Row xs={1} md={2} className="g-4">
             {posterFilms.map((posterFilm) => (
               <Col xs={12} md={6} lg={4} className="column">
-                {/* <Card>
-                                    <Card.Img variant="top" src={ Poster }/>
-                                    <Card.Body>
-                                    <Card.Title>Card title</Card.Title>
-                                    <Card.Text>
-                                        This is a longer card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.
-                                    </Card.Text>
-                                    </Card.Body>
-                                </Card> */}
                 <div className="poster-wrapper">
                   <img
                     src={Poster}
@@ -117,12 +107,7 @@ const Featured = () => {
                             </p>
                           </div>
                         </Col>
-                        {/* <Col xs={4} md={4} lg={2} className="column kanan">
-                                                        <button onClick={handleClose}>tutup</button>
-                                                    </Col> */}
                       </Row>
-                      {/* <div className="kiri">kiri</div>
-                                                <div className="kanan">kanan</div> */}
                     </Modal.Header>
                     <Modal.Body>
                       <h3>Screenshot</h3>
@@ -130,32 +115,15 @@ const Featured = () => {
                         {["Primary", "Secondary", "Success", "Danger"].map(
                           (variant, idx) => (
                             <Col>
-                              {/* <img
-                                                                src={ Poster }
-                                                                className="d-inline-block align-top"
-                                                                alt="Brawijaya Film Festival"
-                                                            /> */}
                               <Card
-                                // bg={variant.toLowerCase()}
                                 key={idx}
-                                // text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
-                                // style={{ width: '18rem' }}
                                 className="screenshot-wrapper"
                               >
-                                {/* <Card.Header>Header</Card.Header> */}
                                 <img
                                   src={Screenshot}
                                   className="screenshot d-inline-block align-top"
                                   alt="screenshot"
-                                  // height="100"
                                 />
-                                {/* <Card.Body>
-                                                                    <Card.Title>{variant} Card Title </Card.Title>
-                                                                    <Card.Text>
-                                                                        Some quick example text to build on the card title and make up the bulk
-                                                                        of the card's content.
-                                                                    </Card.Text>
-                                                                </Card.Body> */}
                               </Card>
                             </Col>
                           )
@@ -175,4 +143,4 @@ const Featured = () => {
   );
 };
 
-export default Featured;
+export default Program;

@@ -1,4 +1,4 @@
-import "./App.scss";
+import './App.scss';
 import {
   BrowserRouter as Router,
   Route,
@@ -7,15 +7,14 @@ import {
   useHistory,
   useRouteMatch,
 } from "react-router-dom";
-import { withRouter } from "react-router";
-import Catalog from "./pages/Catalog";
-import Homepage from "./pages/Homepage";
-import Featured from "./pages/Featured";
-import GlobalNavbar from "./component/GlobalNavbar";
+import { withRouter } from 'react-router'
+import Catalog from './pages/Catalog';
+import Homepage from './pages/Homepage';
+import GlobalNavbar from './component/GlobalNavbar';
 import GlobalFooter from "./component/GlobalFooter";
-import { Helmet } from "react-helmet";
-import { useEffect, useState } from "react";
-import styled from "styled-components";
+import { Helmet } from 'react-helmet';
+import { useEffect, useState } from 'react';
+import Program from './pages/Program';
 
 const Pages = styled.div`
   width: 100vw;
@@ -51,7 +50,7 @@ function App() {
             <Catalog />
           </Route>
           <Route path="/featured">
-            <Featured />
+            <Program />
           </Route>
         </Switch>
         {/* </Pages> */}
