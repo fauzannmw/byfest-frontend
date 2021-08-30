@@ -21,10 +21,13 @@ const Content = () => {
 
 const Hero = () => {
   return (
-    <div className="hero  ">
+    <div className="hero">
       <div className="text-vid">
         <img className="logo-utama" src={logoUtama} alt="" />
-        <h1>BRAWIJAYA FILM FESTIVAL</h1>
+        <div className="title">
+          <h1 className="text-center">BRAWIJAYA FILM FESTIVAL</h1>
+        </div>
+
         <p>19 - 20 Oktober 2021</p>
         <a target="_blank" href="https://forms.gle/pSu4boUPGVjWUR8S8">
           <button>Get Ticket</button>
