@@ -7,6 +7,11 @@
         .container{
             padding-left: 0;
             padding-right: 0;
+            .navbar-nav{
+                justify-content: flex-end;
+                align-items: flex-end;
+                gap: 15px;
+            }
             .navbar-logo{
                 background-image: url('../assets/image/byfest_hijau.png');
                 background-size: cover;
@@ -17,11 +22,11 @@
                 background-color: $kuning;
                 color: $hijau;
                 font-family: "Karla-bold";
-                font-size: 20px;
+                font-size: 18px;
                 border: none;
                 border-radius: 11px;
-                padding: 10px 40px;
-                margin: 0px 15px;
+                padding: 10px 30px;
+                // margin: 0px 15px;
                 transition: 0.2s;
             }
             .navbar-button.true{

@@ -107,7 +107,7 @@ const Catalog = () => {
                 <title>Catalog Event</title>
             </Helmet>
 
-            <div className="content">
+            <div className="contents">
                 <div className="container">
                     <h1 className="catalog-h1">CATALOG EVENT</h1>
                     <Tabs defaultActiveKey="Roadshow" transition={false} id="noanim-tab-example">
@@ -130,7 +130,7 @@ const Catalog = () => {
                                 <div className="card-pengumuman">
                                     
                                     <Row>
-                                        <Col xs={12} md={5} lg={5} className="kiri">
+                                        <Col xs={12} md={5} lg={3} className="kiri">
                                             {/* { spinnerFotoPosting[idx] == true ?
                                             <img 
                                                 src={ fotoPosting[idx] }
@@ -147,15 +147,18 @@ const Catalog = () => {
                                                 alt="preview" 
                                             />
                                         </Col>
-                                        <Col xs={12} md={7} lg={7} className="kanan">
+                                        <Col xs={12} md={7} lg={9} className="kanan">
                                             <div className="kanan-inner">
-                                                <h3>{ posting.Judul }</h3>
-                                                <p className="tanggal">{ moment(posting.Timestamp).format('dddd' + ", " + 'LL') }</p>
-                                                {/* { handleCardParagraph() } */}
-                                                <p>{ posting.Caption.substring(0, 343) + "..." }</p>
-                                                <button className="button-pengumuman" onClick={ (e) => handleShow(posting.Timestamp)}>
-                                                    View More
-                                                </button>
+                                                <div className="top">
+                                                    <h3>{ posting.Judul }</h3>
+                                                    <p className="tanggal">{ moment(posting.Timestamp).format('dddd' + ", " + 'LL') }</p>
+                                                    <p>{ posting.Caption.substring(0, 343) + "..." }</p>
+                                                </div>
+                                                <div className="bottom">
+                                                    <button className="button-pengumuman" onClick={ (e) => handleShow(posting.Timestamp)}>
+                                                        View More
+                                                    </button>
+                                                </div>
                                             </div>
                                         </Col>
                                     </Row>

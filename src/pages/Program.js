@@ -37,12 +37,18 @@ const Program = () => {
         <title>Featured Films</title>
       </Helmet>
 
-      {/* <GlobalNavbar active="featured" /> */}
-
       <div className="content">
         <div className="container">
-          <h1>PROGRAM</h1>
-          <Row xs={1} md={2} className="g-4">
+          {/* <h1>PROGRAM</h1> */}
+          <div className="coming-soon">
+              <h1>Coming Soon</h1>
+              <p>Don't miss the show, mark your calendar!</p>
+          </div>
+          {/* <Row xs={1} md={1} className="g-4">
+            <div className="coming-soon">
+              <h1>Coming Soon</h1>
+              <p></p>
+            </div>
             {posterFilms.map((posterFilm) => (
               <Col xs={12} md={6} lg={4} className="column">
                 <div className="poster-wrapper">
@@ -69,7 +75,6 @@ const Program = () => {
                 >
                   <div className="modal-wrapper">
                     <Modal.Header>
-                      {/* <Modal.Title></Modal.Title> */}
                       <Row className="col-wrapper">
                         <Col
                           xs={12}
@@ -77,7 +82,6 @@ const Program = () => {
                           lg={12}
                           className="column tombol-tutup"
                         >
-                          {/* <button onClick={handleClose}>tutup</button> */}
                           <a onClick={handleClose}>
                             <CloseButton />
                           </a>
@@ -134,7 +138,7 @@ const Program = () => {
                 </Modal>
               </Col>
             ))}
-          </Row>
+          </Row> */}
         </div>
       </div>
 
