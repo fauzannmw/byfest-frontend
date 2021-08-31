@@ -15,6 +15,7 @@ import GlobalFooter from "./component/GlobalFooter";
 import { Helmet } from 'react-helmet';
 import { useEffect, useState } from 'react';
 import Program from './pages/Program';
+import styled from "styled-components";
 
 const Pages = styled.div`
   width: 100vw;
