@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import judges1 from "../../assets/image/judges_1.jpg";
+import kurator1 from "../../assets/image/kurator_1.png";
+import kurator2 from "../../assets/image/kurator_2.png";
+import kurator3 from "../../assets/image/kurator_3.png";
 import "./Judges.scss";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -54,7 +56,34 @@ export default class kurator extends Component {
           <Slider {...settings}>
             <div>
               <Card style={{ width: "22rem" }}>
-                <Card.Img variant="top" src={judges1} />
+                <Card.Img variant="top" src={kurator1} />
+                <Card.Body>
+                  <Card.Title>Ivanda Rizky Wahyu Brilian</Card.Title>
+                  <Card.Text>Film Enthusiast</Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+            <div>
+              <Card style={{ width: "22rem" }}>
+                <Card.Img variant="top" src={kurator2} />
+                <Card.Body>
+                  <Card.Title>Andhika Prayoga</Card.Title>
+                  <Card.Text>Film Enthusiast</Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+            <div>
+              <Card style={{ width: "22rem" }}>
+                <Card.Img variant="top" src={kurator3} />
+                <Card.Body>
+                  <Card.Title>Mahesa Desaga</Card.Title>
+                  <Card.Text>Film Enthusiast</Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+            <div>
+              <Card style={{ width: "22rem" }}>
+                <Card.Img variant="top" src={kurator1} />
                 <Card.Body>
                   <Card.Title>STEVE AOKI</Card.Title>
                   <Card.Text>Film Enthusiast</Card.Text>
@@ -63,34 +92,7 @@ export default class kurator extends Component {
             </div>
             <div>
               <Card style={{ width: "22rem" }}>
-                <Card.Img variant="top" src={judges1} />
-                <Card.Body>
-                  <Card.Title>STEVE AOKI</Card.Title>
-                  <Card.Text>Film Enthusiast</Card.Text>
-                </Card.Body>
-              </Card>
-            </div>
-            <div>
-              <Card style={{ width: "22rem" }}>
-                <Card.Img variant="top" src={judges1} />
-                <Card.Body>
-                  <Card.Title>STEVE AOKI</Card.Title>
-                  <Card.Text>Film Enthusiast</Card.Text>
-                </Card.Body>
-              </Card>
-            </div>
-            <div>
-              <Card style={{ width: "22rem" }}>
-                <Card.Img variant="top" src={judges1} />
-                <Card.Body>
-                  <Card.Title>STEVE AOKI</Card.Title>
-                  <Card.Text>Film Enthusiast</Card.Text>
-                </Card.Body>
-              </Card>
-            </div>
-            <div>
-              <Card style={{ width: "22rem" }}>
-                <Card.Img variant="top" src={judges1} />
+                <Card.Img variant="top" src={kurator1} />
                 <Card.Body>
                   <Card.Title>STEVE AOKI</Card.Title>
                   <Card.Text>Film Enthusiast</Card.Text>

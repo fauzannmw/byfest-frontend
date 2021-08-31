@@ -79,7 +79,7 @@ const Faq = () => {
               </p>
             </AccordionDetails>
           </Accordion>
-          <Accordion style={{ width: "90vw", wordWrap: "" }}>
+          {/* <Accordion style={{ width: "90vw", wordWrap: "" }}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
@@ -111,7 +111,7 @@ const Faq = () => {
                 persyaratannya
               </p>
             </AccordionDetails>
-          </Accordion>
+          </Accordion> */}
           <Accordion style={{ width: "90vw", wordWrap: "" }}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}

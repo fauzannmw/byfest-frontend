@@ -1,10 +1,8 @@
 import React, { useEffect } from "react";
-import { Parallax } from "react-parallax";
 import bgImage from "../../assets/image/Jumbotron-Byfest.jpg";
 import bgVideo from "../../assets/video/stock-video.mp4";
 import logoUtama from "../../assets/image/byfest_kuning.png";
 import "./Hero.scss";
-import { Link } from "react-router-dom";
 
 const Content = () => {
   return (
@@ -41,11 +39,8 @@ const Hero = () => {
           style={{
             position: "absolute",
             width: "100%",
-            // maxHeight: "90%",
             left: "50%",
-            top: "70%",
-            bottom: "80%",
-            // height: "100%",
+            top: "50%",
             objectFit: "cover",
             transform: "translate(-50%, -50%)",
             zIndex: "-1",
@@ -63,7 +58,7 @@ const Hero = () => {
               width: "100%",
               left: "50%",
               top: "50%",
-              height: "100vh",
+              height: "90vh",
               objectFit: "cover",
               transform: "translate(-50%, -50%)",
               zIndex: "-1",
