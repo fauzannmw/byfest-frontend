@@ -11,7 +11,10 @@ const Sponsor = () => {
           <h1>S P O N S O R</h1>
         </Row>
         <Row className="justify-content-center">
-          <Col xs={6} md={4} className="text-center">
+          <b>
+            <h2>Coming Soon</h2>
+          </b>
+          {/* <Col xs={6} md={4} className="text-center">
             <img src={img1} alt="" />
           </Col>
           <Col xs={6} md={4} className="text-center">
@@ -28,7 +31,7 @@ const Sponsor = () => {
           </Col>
           <Col xs={6} md={4} className="text-center">
             <img src={img1} alt="" />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </div>

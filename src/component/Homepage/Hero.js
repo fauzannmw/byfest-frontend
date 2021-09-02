@@ -4,19 +4,6 @@ import bgVideo from "../../assets/video/stock-video.mp4";
 import logoUtama from "../../assets/image/byfest_kuning.png";
 import "./Hero.scss";
 
-// const Content = () => {
-//   return (
-//     <>
-//       <img className="logo-utama" src={logoUtama} alt="" />
-//       <h1>BRAWIJAYA FILM FESTIVAL</h1>
-//       <p>19 - 20 Oktober 2021</p>
-//       <a target="_blank" href="https://forms.gle/pSu4boUPGVjWUR8S8">
-//         <button>Get Ticket</button>
-//       </a>
-//     </>
-//   );
-// };
-
 const Hero = () => {
   return (
     <div className="hero">
