@@ -2,26 +2,61 @@ import React from "react";
 import bgImage from "../../assets/image/Jumbotron-Byfest.jpg";
 import bgVideo from "../../assets/video/stock-video.mp4";
 import logoUtama from "../../assets/image/byfest_kuning.png";
-import "./HeroNew.scss";
+import "./Hero.scss";
 
-
-const HeroNew = () => {
+const Hero = () => {
   return (
     <div className="hero">
-      <video
-        className="video"
-        autoPlay
-        muted
-        loop
-        height="800px"
-      >
-        <source src={bgVideo} type="video/mp4" />
-      </video>
-      <div className="row">
-          <h1>Test</h1>
+      <div className="text-vid">
+        <img className="logo-utama" src={logoUtama} alt="" />
+        <div className="title">
+          <h1 className="text-center">BRAWIJAYA FILM FESTIVAL</h1>
+        </div>
+
+        <p>29 - 31 Oktober 2021</p>
+        <a target="_blank" href="https://forms.gle/pSu4boUPGVjWUR8S8">
+          <button>Get Ticket</button>
+        </a>
       </div>
+      {window.innerWidth < 768 ? (
+        <img
+          src={bgImage}
+          alt=""
+          className="image-1"
+          style={{
+            position: "relative",
+            width: "100%",
+            left: "50%",
+            top: "50%",
+            objectFit: "cover",
+            transform: "translate(-50%, -50%)",
+            zIndex: "-1",
+          }}
+        />
+      ) : (
+        <>
+          <video
+            autoPlay
+            loop
+            muted
+            className="video-1"
+            style={{
+              position: "absolute",
+              width: "100%",
+              left: "50%",
+              top: "50%",
+              height: "90vh",
+              objectFit: "cover",
+              transform: "translate(-50%, -50%)",
+              zIndex: "-1",
+            }}
+          >
+            <source src={bgVideo} type="video/mp4" />
+          </video>
+        </>
+      )}
     </div>
   );
 };
 
-export default HeroNew;
+export default Hero;

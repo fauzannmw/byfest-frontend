@@ -1,12 +1,13 @@
 @import "../../App.scss";
 
-.hero {
+.hero-image {
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 800px;
-  text-align: center;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 
   .text-vid {
     display: flex;
@@ -63,20 +64,11 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .image-1 {
-    display: none;
-  }
-}
-
 @media only screen and (max-width: 768px) {
-  .hero {
+  .hero-image {
     height: 600px;
-    margin: -20px;
-
-    .image-1 {
-      height: 550px;
-    }
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../assets/image/Jumbotron-Byfest.jpg");
 
     .logo-utama {
       width: 40%;

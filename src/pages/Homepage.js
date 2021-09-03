@@ -1,5 +1,4 @@
 import Hero from "../component/Homepage/Hero";
-import HeroNew from "../component/Homepage/HeroNew";
 import Description from "../component/Homepage/Description";
 import Judges from "../component/Homepage/Judges";
 import Kurator from "../component/Homepage/Kurator";
@@ -18,7 +17,6 @@ const Homepage = () => {
         <title>Home</title>
       </Helmet>
       <Hero />
-      {/* <HeroNew /> */}
       <div className="content">
         <Description />
         <Judges />

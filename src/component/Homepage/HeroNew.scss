@@ -1,6 +1,98 @@
-@import "../../App.scss";
+// @import "../../App.scss";
 
-.hero {
-  margin: 0;
-  padding: 0;
-}
+// .hero {
+//   background-size: cover;
+//   height: 800px;
+//   text-align: center;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+
+//   .text-vid {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+
+//     .title {
+//       width: 80%;
+//     }
+//   }
+
+//   .video1 {
+//     width: 100%;
+//     height: 100vh;
+//     position: absolute;
+//     object-fit: cover;
+//   }
+
+//   .logo-utama {
+//     width: 270px;
+//   }
+
+//   h1 {
+//     font-family: "Butler";
+//     color: $kuning;
+//     font-size: 60px;
+//     text-align: center;
+//     text-shadow: -1px 3px 2px #000000;
+//   }
+
+//   p {
+//     font-family: "Karla";
+//     color: $kuning;
+//     font-size: 28px;
+//     text-shadow: -1px 3px 2px #000000;
+//   }
+
+//   button {
+//     font-family: "Karla-Bold";
+//     font-size: 20px;
+//     background-color: $oranye;
+//     color: $kuning;
+//     width: 250px;
+//     height: 50px;
+//     border: none;
+//     border-radius: 6px;
+//     text-align: center;
+//     margin: 20px auto;
+//     &:hover {
+//       background-color: $oranyeTua;
+//       box-shadow: 0px 0px 19px -5px rgba($kuningTua, 0.45);
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 768px) {
+//   .image-1 {
+//     display: none;
+//   }
+// }
+
+// @media only screen and (max-width: 768px) {
+//   .hero {
+//     height: 600px;
+//     margin: -20px;
+
+//     .image-1 {
+//       height: 550px;
+//     }
+
+//     .logo-utama {
+//       width: 40%;
+//     }
+
+//     .video1 {
+//       display: none;
+//     }
+
+//     h1 {
+//       font-size: 40px;
+//       width: 100%;
+//     }
+
+//     p {
+//       font-size: 22px;
+//     }
+//   }
+// }
