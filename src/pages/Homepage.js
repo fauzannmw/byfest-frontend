@@ -19,7 +19,7 @@ const Homepage = () => {
       <Hero />
       <div className="content">
         <Description />
-        <Judges />
+        {/* <Judges /> */}
         <Kurator />
         <Timeline />
         <Faq />

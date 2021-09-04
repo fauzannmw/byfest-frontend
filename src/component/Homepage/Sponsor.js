@@ -7,7 +7,7 @@ const Sponsor = () => {
   return (
     <div className="sponsor">
       <Container>
-        <Row className="justify-content-center">
+        <Row className="justify-content-center mb-4">
           <h1>S P O N S O R</h1>
         </Row>
         <Row className="justify-content-center">

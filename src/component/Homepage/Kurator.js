@@ -81,7 +81,7 @@ export default class kurator extends Component {
                 </Card.Body>
               </Card>
             </div>
-            <div>
+            {/* <div>
               <Card style={{ width: "22rem" }}>
                 <Card.Img variant="top" src={kurator1} />
                 <Card.Body>
@@ -98,7 +98,7 @@ export default class kurator extends Component {
                   <Card.Text>Film Enthusiast</Card.Text>
                 </Card.Body>
               </Card>
-            </div>
+            </div> */}
           </Slider>
         </Container>
       </div>
