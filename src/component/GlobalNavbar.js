@@ -29,7 +29,7 @@ const GlobalNavbar = (props) => {
         <div className="global-navbar">
             <div className="navbar-custom">
                 <div className="container">
-                <Navbar variant="light" expand="lg">
+                <Navbar collapseOnSelect variant="light" expand="lg" sticky="top">
                     <Navbar.Brand href="#home" className="mr-auto">
                         {/* <div className="navbar-logo"></div> */}
                         <Link to="/">

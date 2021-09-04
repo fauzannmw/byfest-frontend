@@ -30,8 +30,6 @@ const Catalog = () => {
 
     const [postingan, setPostingan] = useState([]);
     const [spinner, setSpinner] = useState(false)
-    // const [spinnerFoto, setSpinnerFoto] = useState({ id: 0, value: ''});
-    // const [fotoPosting, setFotoPosting] = useState([]);
     const fotoPosting = [];
     const spinnerFotoPosting = [];
     const [show, setShow] = useState('');
@@ -39,53 +37,11 @@ const Catalog = () => {
     const handleClose = () => setShow(false);
     const handleShow = (id) => setShow(id);
 
-    // const fetchPostingan = async () => {
-    //     const res = await post.get(`sheet1`);
-    //     setPostingan(res.data);
-    //     // for(let i = 0; i < postingan.length; i++){
-    //     //     // console.log(postingan[i].Foto);
-    //     //     // fotoPosting[i] = "https://drive.google.com/uc?export=view&id=" + postingan[i].Foto.substring(33,80);
-    //     //     // spinnerFotoPosting[i] = true;
-    //     //     handleSubstringFoto(res.data[i].Foto, i);
-    //     //     console.log(res.data[i].Foto + " " + i);
-    //     // }
-    // };
-
-    // useEffect(() => {
-    //     fetchPostingan();
-    // },[]);
-
-    // useEffect(async () => {
-    //     await post.get(`sheet1`
-    //     ).then(async (res) => {
-    //         setPostingan(res.data);
-    //         for(let i = 0; i < postingan.length; i++){
-    //             console.log(postingan[i].Foto);
-    //             fotoPosting[i] = "https://drive.google.com/uc?export=view&id=" + postingan[i].Foto.substring(33,80);
-    //             spinnerFotoPosting[i] = true;
-    //         }
-    //         const length = await post.cache.length();
-    //         console.log('Cache store length:', length);
-    //     });
-    // },[])
-
     useEffect(async () => {
-        // const resPost = await post.get(`14276`);
-        // await post.get(`sheet1`
-        await post.get(`exec`
+        await post.get(`pengunguman`
         ).then(async (res) => {
-            // for(let i = 0; i < res.data.length; i++){  
-            //     // // fotoPosting[i] = "https://drive.google.com/uc?export=view&id=" + res.data[i].Foto.substring(33,80);
-            //     // const tanggal = "https://drive.google.com/uc?export=view&id=" + res.data[i].Foto.substring(33,80);
-            //     // // if(tanggal){
-            //     // fotoPosting[i] = tanggal;
-            //     handleSubstringFoto(res.data[i].Foto, i);
-            //     // console.log(fotoPosting[i]);
-
-            // }
             setPostingan(res.data);
             moment.locale('id');
-            // console.log(res.data);
             const length = await post.cache.length();
             console.log('Cache store length:', length);
         });
@@ -96,8 +52,6 @@ const Catalog = () => {
         fotoPosting[idx] = tanggal;
         spinnerFotoPosting[idx] = true;
     };
-
-    
 
     return(
         <div className="catalog">
@@ -131,16 +85,6 @@ const Catalog = () => {
                                     
                                     <Row>
                                         <Col xs={12} md={5} lg={3} className="kiri">
-                                            {/* { spinnerFotoPosting[idx] == true ?
-                                            <img 
-                                                src={ fotoPosting[idx] }
-                                                className="preview-image d-inline-block align-top"
-                                                alt="preview" />
-                                            :   
-                                            <div className="spinner-wrapper">
-                                                <Spinner animation="border" className="spinner" size="md" />
-                                            </div> 
-                                            } */}
                                             <img 
                                                 src={ fotoPosting[idx] }
                                                 className="preview-image d-inline-block align-top"
@@ -152,7 +96,7 @@ const Catalog = () => {
                                                 <div className="top">
                                                     <h3>{ posting.Judul }</h3>
                                                     <p className="tanggal">{ moment(posting.Timestamp).format('dddd' + ", " + 'LL') }</p>
-                                                    <p>{ posting.Caption.substring(0, 343) + "..." }</p>
+                                                    <p className="overview">{ posting.Caption.substring(0, 343) + "..." }</p>
                                                 </div>
                                                 <div className="bottom">
                                                     <button className="button-pengumuman" onClick={ (e) => handleShow(posting.Timestamp)}>
@@ -163,7 +107,7 @@ const Catalog = () => {
                                         </Col>
                                     </Row>
                                 </div>
-                                    <Modal className="modal-pengumuman" show={show == `${posting.Timestamp}`} onHide={handleClose}>
+                                    <Modal size="md" centered className="modal-pengumuman" show={show == `${posting.Timestamp}`} onHide={handleClose}>
                                         <div className="modal-wrapper">
                                             {/* <Modal.Header style={{backgroundImage: `url(${ fotoPosting[idx] })`}}> */}
                                             <Modal.Header>
