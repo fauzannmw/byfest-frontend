@@ -58,7 +58,7 @@ export default class kurator extends Component {
               <Card style={{ width: "22rem" }}>
                 <Card.Img variant="top" src={kurator1} />
                 <Card.Body>
-                  <Card.Title>Ivanda Rizky W. B.</Card.Title>
+                  <Card.Title>Ivanda Rizqy W. B.</Card.Title>
                   <Card.Text>Film Enthusiast</Card.Text>
                 </Card.Body>
               </Card>
