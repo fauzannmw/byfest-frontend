@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from "../../assets/image/Jumbotron-Byfest.jpg";
+import Zoom from 'react-reveal';
 import bgVideo from "../../assets/video/stock-video.mp4";
 import logoUtama from "../../assets/image/byfest_kuning.png";
 import "./Hero.scss";
@@ -9,31 +9,37 @@ const HeroNew = () => {
     <div>
       {window.innerWidth < 768 ? (
         <div className="hero-image">
-          <div className="text-vid">
-            <img className="logo-utama" src={logoUtama} alt="" />
-            <div className="title">
-              <h1 className="text-center">BRAWIJAYA FILM FESTIVAL</h1>
-            </div>
+          <Zoom>
+            <div className="text-vid">
+              <img className="logo-utama" src={logoUtama} alt="" />
+              <div className="title">
+                <h1 className="text-center">BRAWIJAYA FILM FESTIVAL</h1>
+              </div>
 
-            <p>29 - 31 Oktober 2021</p>
-            <a target="_blank" href="https://forms.gle/pSu4boUPGVjWUR8S8">
-              <button>Get Ticket</button>
-            </a>
-          </div>
+              <p>29 - 31 Oktober 2021</p>
+              <a target="_blank" rel="noreferrer" href="https://forms.gle/pSu4boUPGVjWUR8S8">
+                <button>Get Ticket</button>
+              </a>
+            </div>
+          </Zoom>
         </div>
       ) : (
         <div className="hero-image">
+          
           <div className="text-vid">
+            <Zoom top>
             <img className="logo-utama" src={logoUtama} alt="" />
             <div className="title">
               <h1 className="text-center">BRAWIJAYA FILM FESTIVAL</h1>
             </div>
 
             <p>29 - 31 Oktober 2021</p>
-            <a target="_blank" href="https://forms.gle/pSu4boUPGVjWUR8S8">
+            <a target="_blank" rel="noreferrer" href="https://forms.gle/pSu4boUPGVjWUR8S8">
               <button>Get Ticket</button>
             </a>
+            </Zoom>
           </div>
+          
           <video
             autoPlay
             loop

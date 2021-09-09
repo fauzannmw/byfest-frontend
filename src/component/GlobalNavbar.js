@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
-import { Tab, Tabs, Button, Navbar, Nav,Row, Col, Modal } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import { Link } from 'react-router-dom';
 import LogoNavbar from "../assets/image/byfest_hijau.png";
 import "./GlobalNavbar.scss";
@@ -11,12 +11,12 @@ const GlobalNavbar = (props) => {
     const [catalog, setCatalog] = useState(false);
     const [featured, setFeatured] = useState(false);
 
-    useEffect(async () => {
+    useEffect(() => {
         console.log(active);
-        if(active == '/catalog'){
+        if(active === '/catalog'){
             setCatalog(true);
             setFeatured(false);
-        } else if (active == '/featured'){
+        } else if (active === '/featured'){
             setFeatured(true);
             setCatalog(false);
         } else {
@@ -51,7 +51,7 @@ const GlobalNavbar = (props) => {
                             <Link to="/featured">
                                 <button className={`navbar-button ${ featured }`}>Program</button>
                             </Link>
-                            <a target="_blank" href="https://forms.gle/pSu4boUPGVjWUR8S8">
+                            <a target="_blank" rel="noreferrer" href="https://forms.gle/pSu4boUPGVjWUR8S8">
                                 <button className="navbar-button submission">Film Submission</button>
                             </a>
                             {/* <Nav.Link href="#home">Home</Nav.Link>

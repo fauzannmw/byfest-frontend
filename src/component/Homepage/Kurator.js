@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
-import kurator1 from "../../assets/image/kurator_1.png";
-import kurator2 from "../../assets/image/kurator_2.png";
-import kurator3 from "../../assets/image/kurator_3.png";
+import { Container, Row, Card } from "react-bootstrap";
+import { Zoom } from 'react-reveal';
+import kurator0 from "../../assets/image/kurator_1.png";
+import kurator1 from "../../assets/image/kurator_2.png";
+import kurator2 from "../../assets/image/kurator_3.png";
 import "./Judges.scss";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -44,6 +45,23 @@ export default class kurator extends Component {
         },
       ],
     };
+    const curators = [
+      {
+          title: "Ivanda Rizqy W. B.",
+          text: "Ketua Umum NDF 2019-2020",
+          src: kurator0
+      },
+      {
+        title: "Andhika Prayoga",
+        text: "Owner @cinemalinea",
+        src: kurator1
+      },
+      {
+        title: "Mahesa Desaga",
+        text: "Award Winning Film Director",
+        src: kurator2
+      }
+    ]
     return (
       <div className="judges">
         <Container fluid>
@@ -54,51 +72,21 @@ export default class kurator extends Component {
             <h2>C U R A T O R</h2>
           </Row>
           <Slider {...settings}>
-            <div>
-              <Card style={{ width: "22rem" }}>
-                <Card.Img variant="top" src={kurator1} />
-                <Card.Body>
-                  <Card.Title>Ivanda Rizqy W. B.</Card.Title>
-                  <Card.Text>Film Enthusiast</Card.Text>
-                </Card.Body>
-              </Card>
-            </div>
-            <div>
-              <Card style={{ width: "22rem" }}>
-                <Card.Img variant="top" src={kurator2} />
-                <Card.Body>
-                  <Card.Title>Andhika Prayoga</Card.Title>
-                  <Card.Text>Film Enthusiast</Card.Text>
-                </Card.Body>
-              </Card>
-            </div>
-            <div>
-              <Card style={{ width: "22rem" }}>
-                <Card.Img variant="top" src={kurator3} />
-                <Card.Body>
-                  <Card.Title>Mahesa Desaga</Card.Title>
-                  <Card.Text>Film Enthusiast</Card.Text>
-                </Card.Body>
-              </Card>
-            </div>
-            {/* <div>
-              <Card style={{ width: "22rem" }}>
-                <Card.Img variant="top" src={kurator1} />
-                <Card.Body>
-                  <Card.Title>STEVE AOKI</Card.Title>
-                  <Card.Text>Film Enthusiast</Card.Text>
-                </Card.Body>
-              </Card>
-            </div>
-            <div>
-              <Card style={{ width: "22rem" }}>
-                <Card.Img variant="top" src={kurator1} />
-                <Card.Body>
-                  <Card.Title>STEVE AOKI</Card.Title>
-                  <Card.Text>Film Enthusiast</Card.Text>
-                </Card.Body>
-              </Card>
-            </div> */}
+            {curators.map((curator) => {
+              return (
+                <div>
+                  <Zoom cascade>
+                  <Card style={{ width: "22rem" }}>
+                    <Card.Img variant="top" src={curator.src} />
+                    <Card.Body>
+                      <Card.Title>{curator.title}</Card.Title>
+                      <Card.Text>{curator.text}</Card.Text>
+                    </Card.Body>
+                  </Card>
+                  </Zoom>
+                </div>
+              );
+            })}
           </Slider>
         </Container>
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Jumbotron, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Announcement.scss";
 

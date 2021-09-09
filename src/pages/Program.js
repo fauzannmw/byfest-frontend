@@ -1,35 +1,35 @@
-import { Row, Col, Card, Image, Modal } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import GlobalNavbar from "../component/GlobalNavbar";
-import GlobalFooter from "../component/GlobalFooter";
+// import { Row, Col, Card, Image, Modal } from "react-bootstrap";
+// import { Link } from "react-router-dom";
+// import GlobalNavbar from "../component/GlobalNavbar";
+// import GlobalFooter from "../component/GlobalFooter";
 import "./Program.scss";
-import Poster from "../assets/image/poster.jpg";
-import Screenshot from "../assets/image/screenshot.jpg";
-import { useState } from "react";
+// import Poster from "../assets/image/poster.jpg";
+// import Screenshot from "../assets/image/screenshot.jpg";
+// import { useState } from "react";
 import { Helmet } from "react-helmet";
-import CloseButton from '@material-ui/icons/Close'
+// import CloseButton from '@material-ui/icons/Close'
 
 const Program = () => {
-  const posterFilms = [
-        {
-            judul: "LION",
-            direktor: "Arga"
-        },{
-            judul: ".fana",
-            direktor: "Arga"
-        },{
-            judul: "A Night of Nirvana",
-            direktor: "Arga"
-        },{
-            judul: "The Martian",
-            direktor: "Arga"
-        }
-    ]
-    const [postingan, setPostingan] = useState([]);
-    const [show, setShow] = useState('');
+  // const posterFilms = [
+  //       {
+  //           judul: "LION",
+  //           direktor: "Arga"
+  //       },{
+  //           judul: ".fana",
+  //           direktor: "Arga"
+  //       },{
+  //           judul: "A Night of Nirvana",
+  //           direktor: "Arga"
+  //       },{
+  //           judul: "The Martian",
+  //           direktor: "Arga"
+  //       }
+  //   ]
+  //   const [postingan, setPostingan] = useState([]);
+  //   const [show, setShow] = useState('');
 
-  const handleClose = () => setShow(false);
-  const handleShow = (id) => setShow(id);
+  // const handleClose = () => setShow(false);
+  // const handleShow = (id) => setShow(id);
 
   return (
     <div className="featured">

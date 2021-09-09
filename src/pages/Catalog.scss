@@ -24,7 +24,7 @@
             background-color: $kuning;
             color: $hijau;
             border: 5px solid $hijau;
-            border-width: 5px 0px 0px 5px;
+            border-width: 5px 5px 0px 0px;
             border-radius: 0px;
             transition: 0.2s;
 
@@ -36,10 +36,17 @@
                 background-color: $hijau;
                 color: $kuning;
                 border: 5px solid $hijau;
-                border-width: 5px 0px 0px 5px;
+                border-width: 5px 5px 0px 0px;
             }
         }
         .nav-link:last-child{
+            border-width: 5px 5px 0px 0px;
+            &:hover{
+                border-width: 5px 5px 0px 0px;
+            }
+        }
+
+        .nav-link:first-child{
             border-width: 5px 5px 0px 5px;
             &:hover{
                 border-width: 5px 5px 0px 5px;
@@ -58,7 +65,7 @@
             background-color: $hijau;
             border-style: solid;
             border-color: $hijau;
-            border-width: 5px 0px 0px 5px;
+            border-width: 5px 5px 0px 0px;
             color: $kuning;
             position: relative;
             height: 70px !important;
@@ -68,6 +75,12 @@
             align-items: center;
         }
         .nav-link.active:last-child{
+            border-width: 5px 5px 0px 0px;
+            @media screen and (max-width: 768px) {
+                padding: 0px 8px;
+            }
+        }
+        .nav-link.active:first-child{
             border-width: 5px 5px 0px 5px;
         }
         .nav-item.nav-link{
