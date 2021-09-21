@@ -12,7 +12,7 @@ import "./Faq.scss";
 const Faq = () => {
   const faqs = [
     {
-      summary: "Apa itu Braawijaya Film Festival?",
+      summary: "Apa itu Brawijaya Film Festival?",
       details:
         "Brawijaya Film Festival atau BYFEST merupakan festival film tahunan yang digagas oleh Unit Kegiatan Mahasiswa (UKM) Nol Derajat Film Universitas Brawijaya. Acara kegiatan eksibisi ini dilakukan untuk mengapresiasi film yang diproduksi oleh sineas tanah air. Rangkaian acara Brawijaya Film Festival mencakup pemutaran film panjang lawas, program kompetisi film pendek, forum komunitas, dan talkshow. Selain itu, BYFEST 2021 juga mengadakan Open Submission Film Pendek. Program kompetisi film pendek Brawijaya Film Festival diadakan untuk memberi wadah bagi para pembuat film lokal. Adanya program kompetisi ini diharapkan dapat memberi semangat dan apresiasi bagi para kreator film agar terus berkarya dan berkontribusi untuk perfilman Indonesia.",
     },
