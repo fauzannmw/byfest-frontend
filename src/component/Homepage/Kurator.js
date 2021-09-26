@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Card } from "react-bootstrap";
-import { Zoom } from 'react-reveal';
+import { Zoom } from "react-reveal";
 import kurator0 from "../../assets/image/kurator_1.png";
 import kurator1 from "../../assets/image/kurator_2.png";
 import kurator2 from "../../assets/image/kurator_3.png";
@@ -47,21 +47,21 @@ export default class kurator extends Component {
     };
     const curators = [
       {
-          title: "Ivanda Rizqy W. B.",
-          text: "Ketua Umum NDF 2019-2020",
-          src: kurator0
+        title: "Ivanda Rizqy W. B.",
+        text: "Ketua Umum NDF 2020",
+        src: kurator0,
       },
       {
         title: "Andhika Prayoga",
         text: "Owner @cinemalinea",
-        src: kurator1
+        src: kurator1,
       },
       {
         title: "Mahesa Desaga",
         text: "Award Winning Film Director",
-        src: kurator2
-      }
-    ]
+        src: kurator2,
+      },
+    ];
     return (
       <div className="judges">
         <Container fluid>
@@ -76,13 +76,13 @@ export default class kurator extends Component {
               return (
                 <div>
                   <Zoom cascade>
-                  <Card style={{ width: "22rem" }}>
-                    <Card.Img variant="top" src={curator.src} />
-                    <Card.Body>
-                      <Card.Title>{curator.title}</Card.Title>
-                      <Card.Text>{curator.text}</Card.Text>
-                    </Card.Body>
-                  </Card>
+                    <Card style={{ width: "22rem" }}>
+                      <Card.Img variant="top" src={curator.src} />
+                      <Card.Body>
+                        <Card.Title>{curator.title}</Card.Title>
+                        <Card.Text>{curator.text}</Card.Text>
+                      </Card.Body>
+                    </Card>
                   </Zoom>
                 </div>
               );

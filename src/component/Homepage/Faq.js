@@ -30,7 +30,7 @@ const Faq = () => {
     {
       summary: "Apakah acara berbayar atau tidak?",
       details:
-        "Acara yang kami selenggarakan adalah GRATIS tetapi terdapat donasi minimal Rp10.000,00 untuk perkembangan film Indonesia",
+        "Acara yang kami selenggarakan adalah GRATIS tetapi terdapat donasi minimal Rp10.000,00 untuk perkembangan film Indonesia.",
     },
     {
       summary: "Achievement apa yang akan didapatkan pemenang?",
