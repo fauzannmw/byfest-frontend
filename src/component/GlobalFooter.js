@@ -15,7 +15,7 @@ const GlobalFooter = () => {
           </a>
           <a
             target="blank"
-            href="https://www.linkedin.com/in/brawijaya-film-festival-8b668a215"
+            href="https://www.linkedin.com/company/brawijaya-film-festival/"
           >
             <img className="logo" src={linkedin} alt="" />
           </a>
