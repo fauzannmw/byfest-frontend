@@ -1,15 +1,15 @@
-import React from "react";
-import { Container, Row } from "react-bootstrap";
+import React, { useState, useEffect } from "react";
+import { Container, Row, Col } from "react-bootstrap";
 // import img1 from "../../assets/image/sponsor_icon_1.png";
 import post from "../../api/post";
 import "./Sponsor.scss";
 
 const Sponsor = () => {
-  const [sponsorships, setSponsorhip] = useState([]);
+  const [sponsorships, setSponsorship] = useState([]);
 
   useEffect(async () => {
     await post.get(`sponsor`).then(async (res) => {
-      setSponsor(res.data);
+      setSponsorship(res.data);
     });
   }, []);
 
