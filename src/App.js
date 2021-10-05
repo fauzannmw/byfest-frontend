@@ -1,16 +1,17 @@
-import './App.scss';
+import "./App.scss";
 import {
   BrowserRouter as Router,
   Route,
   Switch,
   useLocation,
 } from "react-router-dom";
-import Catalog from './pages/Catalog';
-import Homepage from './pages/Homepage';
-import GlobalNavbar from './component/GlobalNavbar';
+import Catalog from "./pages/Catalog";
+import Homepage from "./pages/Homepage";
+import GlobalNavbar from "./component/GlobalNavbar";
 import GlobalFooter from "./component/GlobalFooter";
-import { Helmet } from 'react-helmet';
-import Program from './pages/Program';
+import { Helmet } from "react-helmet";
+import Program from "./pages/Program";
+import Streaming from "./pages/Streaming";
 
 function App() {
   function PageSwitch() {
@@ -32,6 +33,9 @@ function App() {
           </Route>
           <Route path="/featured">
             <Program />
+          </Route>
+          <Route path="/streaming">
+            <Streaming />
           </Route>
         </Switch>
         {/* </Pages> */}
