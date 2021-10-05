@@ -9,11 +9,7 @@ import Catalog from "./pages/Catalog";
 import Homepage from "./pages/Homepage";
 import GlobalNavbar from "./component/GlobalNavbar";
 import GlobalFooter from "./component/GlobalFooter";
-<<<<<<< HEAD
-import { Helmet } from "react-helmet";
-import Program from "./pages/Program";
 import Streaming from "./pages/Streaming";
-=======
 import { Helmet } from 'react-helmet';
 import Program from './pages/Program';
 import PrivateRoute from './config/PrivateRoute';
@@ -21,7 +17,6 @@ import Login from './pages/Login';
 import LivestreamMenu from './pages/LivestreamMenu';
 import { useState } from 'react';
 import { AuthContext } from './config/Auth';
->>>>>>> a820d95... add password login to livestream
 
 function App() {
   function PageSwitch() {
@@ -35,27 +30,12 @@ function App() {
         <GlobalNavbar active={location.pathname} />
         {/* <Pages> */}
         <Switch>
-          <Route exact path="/">
-            <Homepage />
-          </Route>
-          <Route path="/catalog/">
-            <Catalog />
-          </Route>
-          <Route path="/featured">
-            <Program />
-          </Route>
-<<<<<<< HEAD
-          <Route path="/streaming">
-            <Streaming />
-          </Route>
-=======
-          <Route path="/login">
-            <Login />
-          </Route>
-          <PrivateRoute path="/livestream-menu">
-            <LivestreamMenu />
-          </PrivateRoute>
->>>>>>> a820d95... add password login to livestream
+          <Route exact path="/catalog/" component={Catalog} />
+          <Route exact path="/featured" component={Program} />
+          <Route exact path="/login" component={Login} />
+          <PrivateRoute exact path="/streaming" component={Streaming} />
+          <Route exact path="/livestream-menu" component={LivestreamMenu} />
+          <Route exact path="/" component={Homepage} />
         </Switch>
         {/* </Pages> */}
         <GlobalFooter />

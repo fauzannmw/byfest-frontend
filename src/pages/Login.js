@@ -19,17 +19,22 @@ const Login = () => {
         password:Password
     }).then((res) => {
           // res.status === 200 && setAuthTokens(res.data.data.jwtoken)
-          if(res.data.status != false){
-            setLoggedIn(true)
+          // console.log(res.data)
+          if(res.data.status == true){
+            setLoggedIn(true);
+            setAuthTokens(Password);
+          } else {
+            alert("Password yang anda masukkan salah");
           }
-          console.log(res);
+          // console.log(res);
     }).catch(err => {
           console.log(err);
+          alert("Password yang anda masukkan salah");
     })
   }
 
   if(isLoggedIn){
-    return <Redirect to={"/"} />
+    return <Redirect to={"/livestream-menu"} />
   }
 
   return (
@@ -43,7 +48,7 @@ const Login = () => {
         <div className="container">
           <form onSubmit={handleLogin}>
             <h6>Password</h6>
-            <Form.Control type="password" placeholder="Masukkan Password" />
+            <Form.Control type="password" placeholder="Masukkan Password" onChange={(e) => setPassword(e.target.value)} />
             <button
               className="button-login"
               type="submit"
