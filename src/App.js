@@ -9,14 +9,24 @@ import Catalog from "./pages/Catalog";
 import Homepage from "./pages/Homepage";
 import GlobalNavbar from "./component/GlobalNavbar";
 import GlobalFooter from "./component/GlobalFooter";
+<<<<<<< HEAD
 import { Helmet } from "react-helmet";
 import Program from "./pages/Program";
 import Streaming from "./pages/Streaming";
+=======
+import { Helmet } from 'react-helmet';
+import Program from './pages/Program';
+import PrivateRoute from './config/PrivateRoute';
+import Login from './pages/Login';
+import LivestreamMenu from './pages/LivestreamMenu';
+import { useState } from 'react';
+import { AuthContext } from './config/Auth';
+>>>>>>> a820d95... add password login to livestream
 
 function App() {
   function PageSwitch() {
     let location = useLocation();
-
+    
     return (
       <div className="App">
         <Helmet titleTemplate="%s | BYFEST 2021" defaultTitle="BYFEST 2021">
@@ -34,9 +44,18 @@ function App() {
           <Route path="/featured">
             <Program />
           </Route>
+<<<<<<< HEAD
           <Route path="/streaming">
             <Streaming />
           </Route>
+=======
+          <Route path="/login">
+            <Login />
+          </Route>
+          <PrivateRoute path="/livestream-menu">
+            <LivestreamMenu />
+          </PrivateRoute>
+>>>>>>> a820d95... add password login to livestream
         </Switch>
         {/* </Pages> */}
         <GlobalFooter />
@@ -44,10 +63,19 @@ function App() {
     );
   }
 
+  const existingToken = JSON.parse(localStorage.getItem("tokens"));
+  const [authTokens, setAuthTokens] = useState(existingToken);
+  const setTokens = (data) => {
+    localStorage.setItem("tokens", JSON.stringify(data))
+    setAuthTokens(data);
+  }
+
   return (
-    <Router>
-      <PageSwitch />
-    </Router>
+    <AuthContext.Provider value={{authTokens, setAuthTokens: setTokens}}>
+      <Router>
+        <PageSwitch />
+      </Router>
+    </AuthContext.Provider>
   );
 }
 

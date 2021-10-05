@@ -14,7 +14,8 @@ import { setup } from 'axios-cache-adapter';
 
 export default setup({
     // baseURL:"https://api.steinhq.com/v1/storages/60cc511fd2a8585c5af2826b/",
-    baseURL:"https://adminbyfest.herokuapp.com/",
+    // baseURL:"https://adminbyfest.herokuapp.com/",
+    baseURL:"https://brawijayafilmfestival.com/backend/",
     cache: {
         maxAge: 15 * 60 * 1000
     }

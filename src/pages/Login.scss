@@ -1,0 +1,53 @@
+@import "../App.scss";
+
+.login{
+  .content{
+    min-height: 70vh;
+    background-color: #E5E5E5;
+  
+    .background{
+      .background-kanan,.background-kiri{
+        overflow: hidden;
+        object-fit: cover;
+        max-height: 90vh;
+      }
+      .background-kanan{
+        position: absolute;
+        right: 0;
+      }
+    }
+    .container{
+      z-index: 1;
+      font-family: "Karla-Regular";
+      form{
+        position: absolute;
+        top: 50%;
+  
+        h6{
+          font-size: 20px;
+          font-weight: 700;
+        }
+  
+        .form-control{
+          width: 400px;
+          height: 40px;
+        }
+  
+        .button-login{
+          font-size: 18px;
+          padding: 5px 20px;
+          margin-top: 10px;
+          background-color: $oranye;
+          color: $kuning;
+          border: none;
+          border-radius: 8px;
+          transition: 0.2s;
+          &:hover{
+              background-color: $oranyeTua;
+              box-shadow: 0px 0px 19px -5px rgba($oranyeTua,0.45);
+          }
+      }
+      }
+    }
+  }
+}
