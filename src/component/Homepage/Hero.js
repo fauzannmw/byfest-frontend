@@ -17,9 +17,9 @@ const HeroNew = () => {
               </div>
 
               <p>29 - 31 Oktober 2021</p>
-              {/* <a target="_blank" rel="noreferrer" href="https://forms.gle/pSu4boUPGVjWUR8S8">
+              <a target="_blank" rel="noreferrer" href="/streaming">
                 <button>Get Ticket</button>
-              </a> */}
+              </a>
             </div>
           </Zoom>
         </div>
@@ -34,9 +34,9 @@ const HeroNew = () => {
             </div>
 
             <p>29 - 31 Oktober 2021</p>
-            {/* <a target="_blank" rel="noreferrer" href="https://forms.gle/pSu4boUPGVjWUR8S8">
+            <a target="_blank" rel="noreferrer" href="/streaming">
               <button>Get Ticket</button>
-            </a> */}
+            </a>
             </Zoom>
           </div>
           

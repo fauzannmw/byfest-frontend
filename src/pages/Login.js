@@ -34,7 +34,7 @@ const Login = () => {
   }
 
   if(isLoggedIn){
-    return <Redirect to={"/livestream-menu"} />
+    return <Redirect to={"/streaming"} />
   }
 
   return (
