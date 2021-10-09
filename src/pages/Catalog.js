@@ -116,7 +116,7 @@ const Catalog = () => {
                                                 <div className="top">
                                                     <h3>{ posting.Judul }</h3>
                                                     <p className="tanggal">{ moment(posting.Timestamp).format('dddd' + ", " + 'LL') }</p>
-                                                    <p className="overview">{ posting.Caption.substring(0, 343) + "..." }</p>
+                                                    <p className="overview">{ posting.Caption.substring(0, 330) + "..." }</p>
                                                 </div>
                                                 <div className="bottom">
                                                     <button className="button-pengumuman" onClick={ (e) => handleShow(posting.Timestamp)}>
