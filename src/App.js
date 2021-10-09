@@ -14,7 +14,7 @@ import { Helmet } from 'react-helmet';
 import Program from './pages/Program';
 import PrivateRoute from './config/PrivateRoute';
 import Login from './pages/Login';
-import LivestreamMenu from './pages/LivestreamMenu';
+import Menu from './pages/Menu';
 import { useState } from 'react';
 import { AuthContext } from './config/Auth';
 
@@ -33,8 +33,8 @@ function App() {
           <Route exact path="/catalog/" component={Catalog} />
           <Route exact path="/featured" component={Program} />
           <Route exact path="/login" component={Login} />
-          <PrivateRoute exact path="/streaming" component={Streaming} />
-          <Route exact path="/livestream-menu" component={LivestreamMenu} />
+          <PrivateRoute exact path="/streaming/:slug" component={Streaming} />
+          <Route exact path="/menu" component={Menu} />
           <Route exact path="/" component={Homepage} />
         </Switch>
         {/* </Pages> */}
