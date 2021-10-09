@@ -33,9 +33,9 @@ function App() {
           <Route exact path="/catalog/" component={Catalog} />
           <Route exact path="/featured" component={Program} />
           <Route exact path="/login" component={Login} />
+          <Route exact path="/" component={Homepage} />
           <PrivateRoute exact path="/streaming/:slug" component={Streaming} />
           <PrivateRoute exact path="/menu" component={Menu} />
-          <Route exact path="/" component={Homepage} />
         </Switch>
         {/* </Pages> */}
         <GlobalFooter />

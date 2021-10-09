@@ -5,31 +5,34 @@ import { Form } from "react-bootstrap";
 import post from "../api/post";
 import { useState } from "react";
 import { useAuth } from "../config/Auth";
-import { Redirect } from "react-router";
+import { Redirect, useHistory } from "react-router";
 
 const Login = () => {
+
+  let history = useHistory();
 
   const [Password, setPassword] = useState("");
   const {setAuthTokens} = useAuth();
   const [isLoggedIn, setLoggedIn] = useState(false);
 
-  const handleLogin= async(e) =>{
+  const handleLogin = async(e) =>{
     e.preventDefault()
     await post.post("/passwordyt",{
         password:Password
     }).then((res) => {
-          // res.status === 200 && setAuthTokens(res.data.data.jwtoken)
-          // console.log(res.data)
-          if(res.data.status == true){
-            setLoggedIn(true);
-            setAuthTokens(Password);
-          } else {
-            alert("Password yang anda masukkan salah");
-          }
-          // console.log(res);
+      // res.status === 200 && setAuthTokens(res.data.data.jwtoken)
+      // console.log(res.data)
+      if(res.data.status == true){
+        setAuthTokens(Password);
+        setLoggedIn(true);
+        history.push('/menu')
+      } else {
+        alert("Password yang anda masukkan salah");
+      }
+      // console.log(res);
     }).catch(err => {
-          console.log(err);
-          alert("Password yang anda masukkan salah");
+      console.log(err);
+      alert("Password yang anda masukkan salah");
     })
   }
 
