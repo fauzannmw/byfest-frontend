@@ -16,58 +16,54 @@
                 padding: 30px 0;
                 font-size: 38px;
             }
-            .coming-soon{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                flex: 1;
-                text-align: center;
-                h1{
-                    font-size: 50px;
-                    line-height: 50px;
-                }
-                p{
-                    color: $hijau;
-                    font-family: "Inter";
-                    font-size: 30px;
-                    margin: -20px 0 0 0;
-                    line-height: 30px;
-                }
-            }
-            .column{
-                padding: 0;
-                margin-bottom: 50px;
-                .poster-wrapper{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    text-align: center;
-                    flex-direction: column;
-                    h3{
-                        font-family: "Karla-Bold";
+            .program{
+                .judul{
+                    border-bottom: 1px solid black;
+                    padding: 10px 0;
+                    margin-bottom: 20px;
+                    h2{
+                        font-family: "Butler";
+                        color: $hijau;
                         font-size: 28px;
-                        margin-top: 20px;
-                        margin-bottom: 0;
                     }
-                    p{
-                        font-family: "Karla-Regular";
-                        font-size: 20px;
-                        margin: 0px;
-                    }
-                    .button-poster{
-                        font-family: "Karla-Regular";
-                        font-size: 18px;
-                        padding: 8px 27px;
-                        margin-top: 10px;
-                        background-color: $oranye;
-                        color: $kuning;
-                        border: none;
-                        border-radius: 11px;
-                        transition: 0.2s;
-                        &:hover{
-                            background-color: $oranyeTua;
-                            box-shadow: 0px 0px 19px -5px rgba($oranyeTua,0.45);
+                }
+                .deskripsi{
+                    margin: 0 0 20px 0;
+                }
+                .column{
+                    padding: 0;
+                    margin-bottom: 50px;
+                    .poster-wrapper{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        flex-direction: column;
+                        h3{
+                            font-family: "Karla-Bold";
+                            font-size: 28px;
+                            margin-top: 20px;
+                            margin-bottom: 0;
+                        }
+                        p{
+                            font-family: "Karla-Regular";
+                            font-size: 20px;
+                            margin: 0px;
+                        }
+                        .button-poster{
+                            font-family: "Karla-Regular";
+                            font-size: 18px;
+                            padding: 8px 27px;
+                            margin-top: 10px;
+                            background-color: $oranye;
+                            color: $kuning;
+                            border: none;
+                            border-radius: 11px;
+                            transition: 0.2s;
+                            &:hover{
+                                background-color: $oranyeTua;
+                                box-shadow: 0px 0px 19px -5px rgba($oranyeTua,0.45);
+                            }
                         }
                     }
                 }
@@ -122,6 +118,9 @@
                         margin-top: -38px;
                         .kanan-inner{
                             margin-left: 20px;
+                            .director{
+                                margin-bottom: 20px;
+                            }
                         }
                     }
                     .tombol-tutup{
@@ -165,18 +164,11 @@
                 }
                 .screenshot-wrapper{
                     display: flex;
-                    align-items: center;
-                    justify-content: center;
                     background-color: $kuning;
                     border: none;
                     border-radius: 0;
-                    margin-bottom: 30px;
                     .screenshot{
                         object-fit: cover;
-                        // max-width: 400px;
-                        max-height: 204px;
-                        width: auto;
-                        height: auto;
                     }
                 }
             }
