@@ -1,15 +1,22 @@
 @import "../App.scss";
 
-* {
-  font-family: "Karla-Bold";
-}
-
-.container{
-  .header{
-    margin: 0 auto;
-    padding: 3rem 0;
-    font-family: 'Butler';
-    color: $hijau;
-    text-align: center;
+.streaming{
+  * {
+    font-family: "Karla-Bold";
+  }
+  
+  .container{
+    .header{
+      margin: 0 auto;
+      padding: 3rem 0;
+      font-family: 'Butler';
+      color: $hijau;
+      text-align: center;
+    }
+    p{
+      font-family: "Karla-Regular";
+      font-size: 18px;
+      margin-bottom: 0px;
+    }
   }
 }

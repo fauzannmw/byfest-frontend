@@ -7,7 +7,8 @@ const dataFilm = [
     judul: "Fardhu Kifayah",
     direktor: "Pawadi",
     poster: "DKA.jpg",
-    sinopsis: ``,
+    sinopsis: `Kak Ning, menghadapi ketakutannya akan kematian dengan menjual kebutuhan
+    orang-orang mati.`,
     screenshot: "DKA.jpg",
   },
   {

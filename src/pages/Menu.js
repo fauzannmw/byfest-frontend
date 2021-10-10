@@ -6,7 +6,7 @@ import { useState } from 'react';
 const Menu = () => {
   const [day, setDay] = useState('1');
   return (
-    <div className="livestream-menu">
+    <div className="menu">
       <div className="content">
         <div className="container">
 
@@ -39,47 +39,47 @@ const Menu = () => {
             { day=='1' && <tbody>
               <tr>
                 <td>Opening</td>
-                <td>09.00 A.M</td>
+                <td>09.00 WIB</td>
               </tr>
               <tr>
                 <td>Webinar</td>
-                <td>01.00 P.M</td>
+                <td>13.00 WIB</td>
               </tr>
               <tr>
                 <td>Program Film Pendek Dokumenter Kompetitif</td>
-                <td>02.15 A.M</td>
+                <td>14.15 WIB</td>
               </tr>
               <tr>
                 <td>Program Film Panjang 1</td>
-                <td>07.15 A.M</td>
+                <td>19.15 WIB</td>
               </tr>
             </tbody> }
             { day=='2' && <tbody>
               <tr>
                 <td>Program Film Pendek Kompetitif 1</td>
-                <td>10.00 A.M</td>
+                <td>10.00 WIB</td>
               </tr>
               <tr>
                 <td>Program Film Pendek Kompetitif 2</td>
-                <td>01.00 P.M</td>
+                <td>13.00 WIB</td>
               </tr>
               <tr>
                 <td>Forkom</td>
-                <td>07.00 P.M</td>
+                <td>19.00 WIB</td>
               </tr>
             </tbody> }
             { day=='3' && <tbody>
               <tr>
                 <td>Program Film Pendek Non Kompetitif</td>
-                <td>10.00 A.M</td>
+                <td>10.00 WIB</td>
               </tr>
               <tr>
                 <td>Program Film Panjang 2</td>
-                <td>01.00 P.M</td>
+                <td>13.00 WIB</td>
               </tr>
               <tr>
                 <td>Awarding</td>
-                <td>07.05 P.M</td>
+                <td>19.05 WIB</td>
               </tr>
             </tbody> }
           </Table>
@@ -88,7 +88,7 @@ const Menu = () => {
           <div className="button-visit-wrapper">
             <Link to={`/streaming/${day}`} >
               <button
-                className="button-day"
+                className="button-visit"
                 type="submit"
               >Visit Page</button>
             </Link>

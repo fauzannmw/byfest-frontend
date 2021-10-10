@@ -1,6 +1,7 @@
 @import "../App.scss";
 
-.livestream-menu{
+.menu{
+  font-family: "Karla-Regular";
   min-height: 90vh;
   background-color: #E5E5E5;
   display: flex;
@@ -23,6 +24,7 @@
         justify-content: center;
         gap: 20px;
         .button-day{
+          font-family: "Karla-Bold";
           width: 150px;
           font-size: 18px;
           padding: 5px;
@@ -62,7 +64,8 @@
         align-content: center;
         justify-content: center;
         gap: 20px;
-        .button-day{
+        .button-visit{
+          font-family: "Karla-Bold";
           font-size: 18px;
           padding: 5px 30px;
           border: none;
