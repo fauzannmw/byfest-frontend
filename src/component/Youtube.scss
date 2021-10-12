@@ -6,3 +6,9 @@
   align-items: center;
   margin-bottom: 3rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .youtube {
+    width: 410px;
+  }
+}

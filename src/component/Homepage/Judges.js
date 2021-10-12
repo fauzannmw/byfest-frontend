@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Card } from "react-bootstrap";
+import { Zoom } from "react-reveal";
 import judges1 from "../../assets/image/judges_1.jpg";
 import "./Judges.scss";
 import Slider from "react-slick";
@@ -42,6 +43,23 @@ export default class judges extends Component {
         },
       ],
     };
+    const judges = [
+      {
+        title: "Alexander Matius",
+        text: "Film programmer / curator",
+        src: judges1,
+      },
+      {
+        title: "Roufy Nasution",
+        text: "Film director & Writer",
+        src: judges1,
+      },
+      {
+        title: "Umar Setyadi",
+        text: "Cinematographer",
+        src: judges1,
+      },
+    ];
     return (
       <div className="judges">
         <Container fluid>
@@ -52,51 +70,21 @@ export default class judges extends Component {
             <h2>J U D G E S</h2>
           </Row>
           <Slider {...settings}>
-            <div>
-              <Card style={{ width: "22rem" }}>
-                <Card.Img variant="top" src={judges1} />
-                <Card.Body>
-                  <Card.Title>STEVE AOKI</Card.Title>
-                  <Card.Text>Film Enthusiast</Card.Text>
-                </Card.Body>
-              </Card>
-            </div>
-            <div>
-              <Card style={{ width: "22rem" }}>
-                <Card.Img variant="top" src={judges1} />
-                <Card.Body>
-                  <Card.Title>STEVE AOKI</Card.Title>
-                  <Card.Text>Film Enthusiast</Card.Text>
-                </Card.Body>
-              </Card>
-            </div>
-            <div>
-              <Card style={{ width: "22rem" }}>
-                <Card.Img variant="top" src={judges1} />
-                <Card.Body>
-                  <Card.Title>STEVE AOKI</Card.Title>
-                  <Card.Text>Film Enthusiast</Card.Text>
-                </Card.Body>
-              </Card>
-            </div>
-            <div>
-              <Card style={{ width: "22rem" }}>
-                <Card.Img variant="top" src={judges1} />
-                <Card.Body>
-                  <Card.Title>STEVE AOKI</Card.Title>
-                  <Card.Text>Film Enthusiast</Card.Text>
-                </Card.Body>
-              </Card>
-            </div>
-            <div>
-              <Card style={{ width: "22rem" }}>
-                <Card.Img variant="top" src={judges1} />
-                <Card.Body>
-                  <Card.Title>STEVE AOKI</Card.Title>
-                  <Card.Text>Film Enthusiast</Card.Text>
-                </Card.Body>
-              </Card>
-            </div>
+            {judges.map((judge) => {
+              return (
+                <div>
+                  <Zoom cascade>
+                    <Card style={{ width: "22rem" }}>
+                      <Card.Img variant="top" src={judge.src} />
+                      <Card.Body>
+                        <Card.Title>{judge.title}</Card.Title>
+                        <Card.Text>{judge.text}</Card.Text>
+                      </Card.Body>
+                    </Card>
+                  </Zoom>
+                </div>
+              );
+            })}
           </Slider>
         </Container>
       </div>

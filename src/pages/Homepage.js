@@ -1,6 +1,6 @@
 import Hero from "../component/Homepage/Hero";
 import Description from "../component/Homepage/Description";
-// import Judges from "../component/Homepage/Judges";
+import Judges from "../component/Homepage/Judges";
 import Kurator from "../component/Homepage/Kurator";
 import Timeline from "../component/Homepage/Timeline";
 import Faq from "../component/Homepage/Faq";
@@ -19,7 +19,7 @@ const Homepage = () => {
       <Hero />
       <div className="content">
         <Description />
-        {/* <Judges /> */}
+        <Judges />
         <Kurator />
         <Timeline />
         <Faq />
