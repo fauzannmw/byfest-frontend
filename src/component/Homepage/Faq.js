@@ -39,8 +39,8 @@ const Faq = () => {
     },
     {
       summary: "Apakah acara berbayar atau tidak?",
-      details: `Acara yang kami selenggarakan adalah berbayar (satu tiket sudah termasuk 3 hari rangkaian acara), untuk detail pemesanan 
-      dapat dilihat melalui loket.com/…. atau dengan meng-klik Get Ticket pada homepage website Brawijaya Film Festival`,
+      details: `Acara yang kami selenggarakan adalah gratis! (satu tiket sudah termasuk 3 hari rangkaian acara), untuk detail pemesanan tiket 
+      dapat dilihat melalui https://bit.ly/BYFEST2021 atau dengan meng-klik Get Ticket pada homepage website Brawijaya Film Festival`,
     },
     {
       summary: "Achievement apa yang akan didapatkan pemenang?",

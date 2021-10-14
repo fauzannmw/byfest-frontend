@@ -1,5 +1,5 @@
 import React from "react";
-import Zoom from 'react-reveal';
+import Zoom from "react-reveal";
 import bgVideo from "../../assets/video/stock-video.mp4";
 import logoUtama from "../../assets/image/byfest_kuning.png";
 import "./Hero.scss";
@@ -17,7 +17,11 @@ const HeroNew = () => {
               </div>
 
               <p>29 - 31 Oktober 2021</p>
-              <a target="_blank" rel="noreferrer" href="/streaming">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.loket.com/event/brawijaya-film-festival"
+              >
                 <button>Get Ticket</button>
               </a>
             </div>
@@ -25,21 +29,24 @@ const HeroNew = () => {
         </div>
       ) : (
         <div className="hero-image">
-          
           <div className="text-vid">
             <Zoom top>
-            <img className="logo-utama" src={logoUtama} alt="" />
-            <div className="title">
-              <h1 className="text-center">BRAWIJAYA FILM FESTIVAL</h1>
-            </div>
+              <img className="logo-utama" src={logoUtama} alt="" />
+              <div className="title">
+                <h1 className="text-center">BRAWIJAYA FILM FESTIVAL</h1>
+              </div>
 
-            <p>29 - 31 Oktober 2021</p>
-            <a target="_blank" rel="noreferrer" href="/streaming">
-              <button>Get Ticket</button>
-            </a>
+              <p>29 - 31 Oktober 2021</p>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.loket.com/event/brawijaya-film-festival"
+              >
+                <button>Get Ticket</button>
+              </a>
             </Zoom>
           </div>
-          
+
           <video
             autoPlay
             loop
