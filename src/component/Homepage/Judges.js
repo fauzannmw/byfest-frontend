@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import { Container, Row, Card } from "react-bootstrap";
 import { Zoom } from "react-reveal";
-import judges1 from "../../assets/image/judges_1.jpg";
+import judges1 from "../../assets/image/judges_1.png";
+import judges2 from "../../assets/image/judges_2.png";
+import judges3 from "../../assets/image/judges_3.png";
 import "./Judges.scss";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -52,12 +54,12 @@ export default class judges extends Component {
       {
         title: "Roufy Nasution",
         text: "Film director & Writer",
-        src: judges1,
+        src: judges2,
       },
       {
         title: "Umar Setyadi",
         text: "Cinematographer",
-        src: judges1,
+        src: judges3,
       },
     ];
     return (
