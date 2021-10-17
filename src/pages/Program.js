@@ -14,7 +14,7 @@ const Program = () => {
   const programs = [
     {
       jenis: "FK1",
-      judul: "FIKSI KOMPETITIF 1",
+      judul: "FIKSI KOMPETITIF 1: UANG",
       deskripsi: `
       Uang: alat tukar atau standar pengukur nilai (kesatuan hitungan)
       yang sah, dikeluarkan oleh pemerintah suatu negara berupa kertas,
@@ -37,7 +37,7 @@ const Program = () => {
     },
     {
       jenis: "FK2",
-      judul: "FIKSI KOMPETITIF 2",
+      judul: "FIKSI KOMPETITIF 2: HARAPAN-HARAPAN KECIL",
       deskripsi: `
       Anak merupakan subjek yang kerap kali dipandang sebelah mata dalam
       film. Kebanyakan para sineas cenderung memilih remaja sampai orang
@@ -57,7 +57,7 @@ const Program = () => {
     },
     {
       jenis: "DK",
-      judul: "DOKUMENTER KOMPETITIF",
+      judul: "DOKUMENTER KOMPETITIF: INDAH DI BALIK KEABUAN",
       deskripsi: `
       Rasa kesepian dan putus asa tidak asing kita alami dalam kehidupan
       sehari-hari. Dalam menjalani kehidupan, kita sebagai manusia pasti
@@ -82,7 +82,7 @@ const Program = () => {
     },
     {
       jenis: "NK",
-      judul: "NON KOMPETITIF",
+      judul: "NON KOMPETITIF: SEBUAH CINTA PADA PANDANG PERTAMA",
       deskripsi: `
       Film dapat dilihat sebagai media hiburan tersendiri bagi para
       pembuat film dan juga para penikmat film itu sendiri. Film dapat
@@ -137,18 +137,22 @@ const Program = () => {
                       <div className="poster-wrapper">
                         <img
                           src={`/img/programs/${posterFilm.poster}`}
-                          width="250"
-                          className="d-inline-block align-top"
+                          // width="250"
+                          className="img-poster d-inline-block align-top"
                           alt="Brawijaya Film Festival"
                         />
-                        <h3>{posterFilm.judul}</h3>
-                        <p>{posterFilm.direktor}</p>
-                        <button
-                          className="button-poster"
-                          onClick={(e) => handleShow(posterFilm.judul)}
-                        >
-                          view
-                        </button>
+                        <div className="detail">
+                          <h3>{posterFilm.judul}</h3>
+                          <p>{posterFilm.direktor}</p>
+                        </div>
+                        <div className="button-poster-wrapper">
+                          <button
+                            className="button-poster"
+                            onClick={(e) => handleShow(posterFilm.judul)}
+                          >
+                            View
+                          </button>
+                        </div>
                       </div>
                       <Modal
                         className="modal-poster"
