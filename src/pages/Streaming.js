@@ -10,13 +10,16 @@ const Streaming = () => {
   return (
     <div className="streaming">
       <div className="container">
-        <h1 className="header">DAY - {slug} BRAWIJAYA FILM FESTIVAL</h1>
+        <h1 className="header">BRAWIJAYA FILM FESTIVAL DAY - {slug} </h1>
         <YoutubeEmbed embedId="rKIBiJt6EF8" />
+        <div className="judul">
+          <h2>NOW PLAYING</h2>
+        </div>
         {dataFilm
           .filter((filterfilm) => filterfilm.day === slug)
           .map((film) => {
             return (
-              <div className="row my-5 ">
+              <div className="row my-5">
                 <div
                   className="col-lg-3 d-flex justify-content-center"
                   style={{ padding: "0" }}
@@ -24,7 +27,6 @@ const Streaming = () => {
                   <img
                     src={`/img/programs/${film.poster}`}
                     alt=""
-                    width="250"
                   />
                 </div>
                 <div className="col-lg-9 ">

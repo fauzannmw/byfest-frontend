@@ -53,7 +53,7 @@ const Faq = () => {
         <Row className="justify-content-center mt-5">
           <h1>F A Q</h1>
         </Row>
-        <Fade>
+        <Fade top>
           <Row className="justify-content-center">
             {faqs.map((faq) => {
               return (

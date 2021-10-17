@@ -45,15 +45,15 @@ const GlobalNavbar = (props) => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                         <Nav>
-                            <Link to="/catalog">
+                            <Nav.Link eventKey="1" as={Link} to="/catalog">
                                 <button className={`navbar-button ${ catalog }`}>Catalog Event</button>     
-                            </Link>
-                            <Link to="/featured">
+                            </Nav.Link>
+                            <Nav.Link eventKey="2" as={Link} to="/featured">
                                 <button className={`navbar-button ${ featured }`}>Program</button>
-                            </Link>
-                            <Link to="/menu">
+                            </Nav.Link>
+                            <Nav.Link eventKey="3" as={Link} to="/menu">
                                 <button className="navbar-button submission">Streaming</button>
-                            </Link>
+                            </Nav.Link>
                             {/* <Nav.Link href="#home">Home</Nav.Link>
                             <Nav.Link href="#features">Features</Nav.Link>
                             <Nav.Link href="#pricing">Pricing</Nav.Link> */}

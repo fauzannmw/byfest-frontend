@@ -6,47 +6,47 @@ const dataFilm = [
     day: "1",
     judul: "Fardhu Kifayah",
     direktor: "Pawadi",
-    poster: "DKA.jpg",
+    poster: "DKA.webp",
     sinopsis: `Kak Ning, menghadapi ketakutannya akan kematian dengan menjual kebutuhan
     orang-orang mati.`,
-    screenshot: "DKA.jpg",
+    screenshot: "DKA.webp",
   },
   {
     jenis: "DK",
     day: "1",
     judul: "Siena",
     direktor: "Daphne",
-    poster: "DKB.jpg",
+    poster: "DKB.webp",
     sinopsis: `Dokumenter ini mengikuti kehidupan Siena melewati hari-hari masa tuanya. Siena hidup dalam
     keluarga besar, dekat dengan anak dan cucunya. Sekali dalam seminggu, rumahnya akan penuh
     dengan keramaian karena anak dan cucunya yang datang berkunjung. Siana memilih tetap
     tinggal di rumah tuanya, kendati ia harus tinggal seorang diri. Alasannya sederhana, ia nyaman
     ada di rumah itu, rumah yang menyimpan banyak kenangan, setiap sudut bahkan benda
     memiliki ceritanya sendiri.`,
-    screenshot: "DKB.jpg",
+    screenshot: "DKB.webp",
   },
   {
     jenis: "DK",
     day: "1",
     judul: "Positive",
     direktor: "Daffa Amrullah",
-    poster: "DKC.png",
+    poster: "DKC.webp",
     sinopsis: `Seorang pria dinyatakan positif Covid-19 dan harus mengalami karantina di Wisma Atlet Pademangan, Jakarta, 
     sampai diperbolehkan pulang ke rumah. Selama 7 hari di sana, ia merekam kegiatan para penghuni yang berstatus sebagai pasien 
     yang sedang berjuang untuk sembuh di tengah buruknya angka kasus covid-19 di Indonesia pada Januari 2021.`,
-    screenshot: "DKC.png",
+    screenshot: "DKC.webp",
   },
   {
     jenis: "DK",
     day: "1",
     judul: "End of the Tunnel",
     direktor: "Garry Christian",
-    poster: "DKD.jpeg",
+    poster: "DKD.webp",
     sinopsis: `Dody Iskandar, Abdul Karim, dan Taufik Zulfikri adalah tiga individu tunanetra dengan kadar keterbatasan penglihatan 
     yang berbeda-beda. Ketiganya memiliki kegemaran untuk menonton dan memproduksi film, dan mengekspresikan kegemaran tersebut dengan 
     menonton film, memproduksi film secara mandiri, serta berperan aktif sebagai partisipan dalam Inklusi Film Indonesia (INFI), 
     sebuah komunitas bagi individu-individu disabilitas untuk memproduksi dan menikmati film.`,
-    screenshot: "DKD.png",
+    screenshot: "DKD.webp",
   },
   
   //DAY-2
@@ -56,7 +56,7 @@ const dataFilm = [
     day: "2",
     judul: "Like Fish Living On Land",
     direktor: "Salas Anggobil Rokhira",
-    poster: "FK1A.jpg",
+    poster: "FK1A.webp",
     sinopsis: `Joko (45) seorang petani tambak yang mengalami kerugian dengan kehilangan ikan yang cukup banyak
     akibat ROB/banjir dari air laut yang setiap tahun meningkat tajam. Suatu hari Joko meminta bantun
     kepada Mbah Wito(60) seorang dukun untuk mengatasi masalahnya tersebut. Mbah Wito menyuruh
@@ -73,38 +73,38 @@ const dataFilm = [
     diperintahkan oleh mbah wito. Asap dari dupa tersebut menyebar memenuhi semua ruangan menjadi
     satu dengan bau ikan yang semakin amis. Menjadikan Fatimah dan Udin tidak betah didalam dan
     akhirnya keluar dari rumah, membuat mereka seperti ikan yang tidak tidur seperti ikan.`,
-    screenshot: "FK1A.png",
+    screenshot: "FK1A.webp",
   },
   {
     jenis:"FK1",
     day: "2",
     judul: "Kelangan Senter",
     direktor: "Adityo Hernawan",
-    poster: "FK1B.png",
+    poster: "FK1B.webp",
     sinopsis: `Dusun Kremi Kidul merupakan daerah perkampungan yang aman, nyaman, serta damai. Meski demikian, aktivitas ronda malam tetap rutin 
     dilaksanakan. Malam ini giliran Agus, Yos, dan Satria yang bertugas menjaga pos ronda. Seperti biasa, 
     di jam-jam tertentu setiap yang bertugas akan keliling Dusun untuk patroli, memastikan setiap sudut Dusun Kremi Kidul aman. 
     Masalah pun muncul ketika senter yang biasanya dipakai untuk patroli hilang. Mereka mencari ke setiap sudut pos ronda 
     namun tetap saja tidak ketemu. Dugaan demi dugaan pun muncul atas hilangnya senter tersebut. Mereka pun tak kunjung berangkat patroli, 
     mereka terus memperdebatkan siapa yang sampai hati mengambil senter Pos Ronda Dusun Kremi Kidul.`,
-    screenshot: "FK1B.jpg",
+    screenshot: "FK1B.webp",
   },
   {
     jenis:"FK1",
     day: "2",
     judul: "Nebeng",
     direktor: "M. Faisal Hibatulah",
-    poster: "FK1C.jpeg",
+    poster: "FK1C.webp",
     sinopsis: `Demi mendapatkan uang tambahan, Karyo (45) seorang sopir truk terpaksa mengantar jenazah Tazbo (23) untuk pulang ke rumah dukanya. 
     Sepanjang perjalanan untuk membunuh rasa bosan, Karyo memberanikan diri membuka percakapan tentang kematian hingga masalah hidupnya yang pelik.`,
-    screenshot: "FK1C.png",
+    screenshot: "FK1C.webp",
   },
   {
     jenis:"FK1",
     day: "2",
     judul: "Mata Tertutup",
     direktor: "Syahreza Fahlevi",
-    poster: "FK1D.jpg",
+    poster: "FK1D.webp",
     sinopsis: `Ridwan adalah seorang pemijat tunanetra yang tinggal di kota Jakarta di sebuah rusun padat penduduk bersama Siti Istrinya. 
     Ridwan sering menghibur dirinya dengan mendengarkan Radio. Namun pada saat itu, radio banyak menyiarkan kasus penangkapan kasus korupsi 
     yang terjadi dari tahun ke tahun. Tanggapan Ridwan tampak acuh dan bosan atas pemberitaan tersebut dan mencari siaran lain yang dapat 
@@ -116,38 +116,38 @@ const dataFilm = [
     Ridwan diantarkan oleh Agus untuk menemui atasanya melewati sebuah ruang yang penuh dengan meja dan bangku yang tersusun rapih, berjalan 
     jauh melewati lorong hingga akhirnya masuk kedalam sebuah ruangan yang terpasang sebuah data penghuni serta nomer kamar sebuah lapas di 
     pintu masuknya.`,
-    screenshot: "FK1D.jpg",
+    screenshot: "FK1D.webp",
   },
   {
     jenis:"FK2",
     day: "2",
     judul: "Try Again",
     direktor: "Ainul Fikri",
-    poster: "FK2A.jpg",
+    poster: "FK2A.webp",
     sinopsis: `Ezra (12) diberi tanggung jawab oleh ayahnya untuk mengantar Sawa (8) bermain. Namun, Ezra malah mampir ke atas bukit 
     untuk mencari sinyal dan bermain game online di HP ayahnya. Ezra yang terlalu fokus pada HP menyebabkan ia tidak sadar jika Sawa 
     sudah tidak ada di sekitarnya. Ezra mengalami kejadian yang akan terjadi padanya berulang-ulang, saat ia berusaha mencari adiknya 
     yang tiba-tiba menghilang, sampai membawanya pada kemungkinan yang berakhir baik padanya dan orang-orang sekitarnya.`,
-    screenshot: "FK2A.png",
+    screenshot: "FK2A.webp",
   },
   {
     jenis:"FK2",
     day: "2",
     judul: "Masih Kecil",
     direktor: "Faishal Amri",
-    poster: "FK2B.jpg",
+    poster: "FK2B.webp",
     sinopsis: `Bunga dan Setyo mengira Bunga hamil setelah mereka tidak sengaja berpelukan.
     Bunga sangat ketakutan akan kehamilannya kondisi tersebut membuat mereka tertekan
     dan mencoba mencari solusi. Namun, semua perjalanan mencari jawaban atas
     kegelisahan Bunga dan Setyo mendapat pertentangan dari orang yang mereka temui.`,
-    screenshot: "FK2B.jpg",
+    screenshot: "FK2B.webp",
   },
   {
     jenis:"FK2",
     day: "2",
     judul: "Harapan Harapan yang Sempit",
     direktor: "M. Rizal Hanun",
-    poster: "FK2C.jpg",
+    poster: "FK2C.webp",
     sinopsis: `Jakarta, 2019. Bagas - anak yatim yang jahil - tinggal bersama ibunya,
     Marni. Suatu malam Bagas bertanya tentang tempat kelahirannya, Marni
     harus berbohong dengan mengatakan bahwa tempat kelahiran Bagas
@@ -155,20 +155,20 @@ const dataFilm = [
     malah mencoba menemukan tempat kelahiran yang dimaksud oleh ibunya.
     Akibat kelakuan Bagas yang berlebihan, Marni pun kesal sehingga
     melakukan sesuatu yang tidak bijaksana untuk anaknya.`,
-    screenshot: "FK2C.png",
+    screenshot: "FK2C.webp",
   },
   {
     jenis:"FK2",
     day: "2",
     judul: "Teman Beda Alam",
     direktor: "Augie Ahmad Ariyanto ",
-    poster: "FK2D.jpg",
+    poster: "FK2D.webp",
     sinopsis: `Hampir seharian diguyur oleh hujan, mengakibatkan seorang anak SD tidak bisa beraktivitas keluar rumah. 
     Doni (7) mulai beranjak menuju ke halaman belakang rumah untuk melihat-lihat keadaan yang dimana hujan sudah mulai reda. 
     Mata Doni tertuju kepada sebuah percikan air dari sebuah genangan air lalu Doni mulai menuju ke genangan itu. 
     Doni mendapati sebuah ikan dengan bentuk yang menurtnya aneh. Karena penasaran, tanpa pikir panjang Doni langsung mengambil ikan itu 
     untuk dipelihara namun tindakan Doni malah menimbulkan masalah baru bagi keluarga Doni.`,
-    screenshot: "FK2D.jpg",
+    screenshot: "FK2D.webp",
   },
 
   //DAY 3
@@ -178,21 +178,21 @@ const dataFilm = [
     day: "3",
     judul: "Facade",
     direktor: "Ivana Wihartono",
-    poster: "NKA.png",
+    poster: "NKA.webp",
     sinopsis: `Fara merupakan seorang wanita indekos yang kurang puas dengan kondisi ekonomi dan lingkungannya yang ia tinggali saat itu. 
     Ia memiliki hasrat untuk panjat sosial agar terlihat hedonis dan glamor. Cara untuk meraih gaya hidup yang ia inginkan adalah 
     menipu berbagai pria yang tertarik pada parasnya agar mereka rela memberinya tunjangan finansial. Pada suatu hari, Fara pergi kencan 
     di suatu restoran mewah bersama 
     seorang pria paruh baya bernama Agung. Agung memberikan Fara cincin berlian yang sedang ia incar. 
     Usai makan, Fara izin pergi ke kamar kecil dan kabur melewati pintu belakang restoran.`,
-    screenshot: "NKA.png",
+    screenshot: "NKA.webp",
   },
   {
     jenis:"NK",
     day: "3",
     judul: "Dia",
     direktor: "Dika Zahran",
-    poster: "NKB.png",
+    poster: "NKB.webp",
     sinopsis: `Seorang wanita, terbangun di tengah hutan dengan pisau di genggamannya. Di dalam hutan
     dia melihat wanita lain di kejauhan. Ketika dia memanggil suaranya tidak keluar. Dia mendekat
     dan melihat wanita itu dikejar oleh wanita lain. Semakin mendekat dia melihat wanita tersebut
@@ -201,24 +201,24 @@ const dataFilm = [
     wajah dirinya sendiri. Dari balik pohon dia melihat wanita lain. Dia berusaha mendekat namun
     wanita itu lari, dia pun lari mendekat namun malah ditusuk. Dan yang menusuknya berwajah
     sama persis dengan dirinya.`,
-    screenshot: "NKB.jpg",
+    screenshot: "NKB.webp",
   },
   {
     jenis:"NK",
     day: "3",
     judul: "Jenglot Redemption",
     direktor: "Paundra Wibatsu",
-    poster: "NKC.png",
+    poster: "NKC.webp",
     sinopsis: `Nana, Yato, Farida, Susan, Bokir dan Sisworo hendak bikin film di hutan angker. Ndilalah mereka
     ketemu Jenglot yang nggak cuma haus darah tapi haus hiburan juga.`,
-    screenshot: "NKC.png",
+    screenshot: "NKC.webp",
   },
   {
     jenis:"NK",
     day: "3",
     judul: "Cipak Cipuk",
     direktor: "Bernardin Andara Fembriarto",
-    poster: "NKD.jpg",
+    poster: "NKD.webp",
     sinopsis: `Timia dan Galeo tinggal di sebuah rumah usang di tengah segara. Mereka perlu memperbaiki atap
     rumah sebelum upacara suci ibu mereka. Tapi, Timia malah bermain-main dengan kalung Mutiara
     Mentari milik sang ibu yang mereka butuhkan untuk upacara tersebut. Lalu, karena dimarahi
@@ -226,19 +226,19 @@ const dataFilm = [
     mengincar kalung ibunya. Galeo kemudian berusaha menyelamatkan Timia dan mencari tahu
     kenapa adiknya begitu bandel. Pada akhirnya, kedua kakak-adik itu bersatu dan bekerja sama
     sehingga Galeo pun tahu apa yang sesungguhnya mengusik hati Timia.`,
-    screenshot: "NKD.png",
+    screenshot: "NKD.webp",
   },
   {
     jenis:"NK",
     day: "3",
     judul: "Anxietus Domicupus",
     direktor: "Gugun Arief",
-    poster: "NKE.jpeg",
+    poster: "NKE.webp",
     sinopsis: `Dopaminus, seorang gadis pengidap kecemasan yang tinggal di sarkofagus terbang mendapat job
     mengantar barang ke Endorfinus, alien yang tinggal di planet mini. Di sana Dopaminus dibayang-
     bayangi oleh Rampokanus, anggota sekte berhaluan garis keras. Dopaminus menghajar mereka dalam
     pertarungan pedang. Sementara itu Dopaminus mencari jalan untuk meredakan kecemasannya.`,
-    screenshot: "NKE.jpg",
+    screenshot: "NKE.webp",
   },
 ]
 
