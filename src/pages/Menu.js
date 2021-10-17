@@ -50,53 +50,53 @@ const Menu = () => {
               <thead>
                 <tr>
                   <th>Event</th>
-                  <th>Jam</th>
+                  <th>Time</th>
                 </tr>
               </thead>
               { day=='1' && <tbody>
                 <tr>
                   <td>Opening</td>
-                  <td>09.00 WIB</td>
+                  <td>10.00 WIB</td>
                 </tr>
                 <tr>
                   <td>Webinar</td>
                   <td>13.00 WIB</td>
                 </tr>
                 <tr>
-                  <td>Program Film Pendek Dokumenter Kompetitif</td>
+                  <td>Program Dokumenter Kompetitif: Indah di Balik Keabuan</td>
                   <td>14.15 WIB</td>
                 </tr>
                 <tr>
-                  <td>Program Film Panjang 1</td>
-                  <td>19.15 WIB</td>
+                  <td>Program Film Panjang 1: Senyum di Pagi Bulan Desember (1974)</td>
+                  <td>18.45 WIB</td>
                 </tr>
               </tbody> }
               { day=='2' && <tbody>
                 <tr>
-                  <td>Program Film Pendek Kompetitif 1</td>
+                  <td>Program Fiksi Kompetitif 1: Uang</td>
                   <td>10.00 WIB</td>
                 </tr>
                 <tr>
-                  <td>Program Film Pendek Kompetitif 2</td>
+                  <td>Program Fiksi Kompetitif 2: Harapan-Harapan Kecil</td>
                   <td>13.00 WIB</td>
                 </tr>
                 <tr>
-                  <td>Forkom</td>
+                  <td>Forum Komunitas Se-Jawa Timur</td>
                   <td>19.00 WIB</td>
                 </tr>
               </tbody> }
               { day=='3' && <tbody>
                 <tr>
-                  <td>Program Film Pendek Non Kompetitif</td>
+                  <td>Program Fiksi Non-Kompetitif: Sebuah Cinta pada Pandang Pertama</td>
                   <td>10.00 WIB</td>
                 </tr>
                 <tr>
-                  <td>Program Film Panjang 2</td>
+                  <td>Program Film Panjang 2: Violetta (1965)</td>
                   <td>13.00 WIB</td>
                 </tr>
                 <tr>
                   <td>Awarding</td>
-                  <td>19.05 WIB</td>
+                  <td>18.50 WIB</td>
                 </tr>
               </tbody> }
             </Table>

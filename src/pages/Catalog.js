@@ -30,7 +30,7 @@ const Catalog = () => {
         {
             key: "Forum Komunitas",
             header: "Forum Komunitas",
-            content: "Kegiatan diskusi bersama komunitas film yang berada di Malang."
+            content: "Kegiatan diskusi bersama komunitas film Se-Jawa Timur."
         },
         {
             key: "Awarding",
