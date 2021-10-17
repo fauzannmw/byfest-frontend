@@ -1,22 +1,38 @@
 @import "../App.scss";
 
-.streaming{
+.streaming {
   * {
     font-family: "Karla-Bold";
   }
-  
-  .container{
-    .header{
+
+  .container {
+    .header {
       margin: 0 auto;
       padding: 3rem 0;
-      font-family: 'Butler';
+      font-family: "Butler";
       color: $hijau;
       text-align: center;
     }
-    p{
+    p {
       font-family: "Karla-Regular";
       font-size: 18px;
       margin-bottom: 0px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .streaming {
+    .container {
+      img {
+        max-height: 16rem;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 16px;
+      }
     }
   }
 }

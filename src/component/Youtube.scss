@@ -1,14 +1,16 @@
 @import "../App.scss";
 
-.youtube {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 3rem;
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
 }
 
-@media only screen and (max-width: 768px) {
-  .youtube {
-    width: 410px;
-  }
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
