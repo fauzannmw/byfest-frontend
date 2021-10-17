@@ -39,6 +39,32 @@
           }
         }
       }
+
+      .nav{
+        font-family: "Karla-Bold";
+        font-size: 18px;
+        column-gap: 1rem;
+        .nav-link{
+          padding: 8px 8px;
+          border: none;
+          border-radius: 8px;
+          transition: 0.2s;
+          color: $hijau;
+          background-color: $kuning;
+        }
+        .nav-link.active{
+          padding: 8px 8px;
+          border: none;
+          border-radius: 8px;
+          transition: 0.2s;
+          background-color: $hijau;
+          color: $kuning;
+          &:hover{
+              background-color: $hijauTua;
+              box-shadow: 0px 0px 19px -5px rgba($hijauTua,0.45);
+          }
+        }
+      }
   
       .table-wrapper{
         width: 100%;

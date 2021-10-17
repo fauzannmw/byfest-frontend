@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { OverlayTrigger, Table, Tooltip } from 'react-bootstrap';
+import { OverlayTrigger, Table, Tooltip, Nav } from 'react-bootstrap';
 import './Menu.scss'
 import { useState } from 'react';
 
@@ -24,7 +24,7 @@ const Menu = () => {
       <div className="content">
         <div className="container">
 
-          <div className="button-day-wrapper">
+          <Nav justify variant="pills" defaultActiveKey="1">
             {buttonDay.map((btn) => {
               return (
                 <OverlayTrigger
@@ -37,15 +37,13 @@ const Menu = () => {
                   }
                   delay={{ show: 50, hide: 50 }}
                 >
-                  <button
-                    className="button-day"
-                    type="submit"
-                    onClick={() => setDay(btn.day)}
-                  >Day - {btn.day}</button>
+                  <Nav.Item>
+                    <Nav.Link eventKey={btn.day} onClick={() => setDay(btn.day)}>Day - {btn.day}</Nav.Link>
+                  </Nav.Item>
                 </OverlayTrigger>
               );
             })}
-          </div>
+          </Nav>
 
           <div className="table-wrapper">
             <Table striped bordered hover>
