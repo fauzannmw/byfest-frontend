@@ -2,7 +2,7 @@
 
 .login{
   .content{
-    min-height: 70vh;
+    min-height: 90vh;
     background-color: #E5E5E5;
   
     .background{
@@ -15,22 +15,31 @@
         position: absolute;
         right: 0;
       }
+      .background-kiri{
+        position: absolute;
+        left: 0;
+      }
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
     .container{
-      z-index: 1;
+      min-height: 90vh;
       font-family: "Karla-Regular";
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
       form{
-        position: absolute;
-        top: 50%;
-  
+        z-index: 1;
+        width: 100%;
         h6{
           font-size: 20px;
           font-weight: 700;
         }
   
         .form-control{
-          width: 400px;
-          height: 40px;
+          max-width: 500px;
         }
   
         .button-login{
@@ -51,3 +60,4 @@
     }
   }
 }
+
