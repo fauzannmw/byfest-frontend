@@ -42,7 +42,7 @@ const Menu = () => {
                       {btn.toolTip}
                     </Tooltip>
                   }
-                  delay={{ show: 50, hide: 50 }}
+                  // delay={{ show: 50, hide: 50 }}
                 >
                   <Nav.Item>
                     <Nav.Link eventKey={btn.day} onClick={() => setDay(btn.day)}>Day - {btn.day}</Nav.Link>

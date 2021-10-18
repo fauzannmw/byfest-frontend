@@ -3,14 +3,19 @@ import YoutubeEmbed from "../component/Youtube";
 import "./Streaming.scss";
 import { useParams } from "react-router";
 import dataFilm from "../api/dataFilm";
+import { Helmet } from "react-helmet";
 
 const Streaming = () => {
   let { slug } = useParams();
 
   return (
     <div className="streaming">
+      <Helmet>
+          <title>Streaming Day - {slug}</title>
+      </Helmet>
+
       <div className="container">
-        <h1 className="header">BYFEST DAY - {slug} </h1>
+        <h1 className="header">BYFEST DAY - {slug}</h1>
         <YoutubeEmbed embedId="rKIBiJt6EF8" />
         <div className="judul">
           <h2>NOW PLAYING</h2>
