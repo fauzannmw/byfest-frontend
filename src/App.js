@@ -26,7 +26,15 @@ function App() {
     return (
       <div className="App">
         <Helmet titleTemplate="%s | BYFEST 2021" defaultTitle="BYFEST 2021">
-          <meta name="description" content="Brawijaya Film Festival 2021" />
+          <meta 
+            name="description" 
+            content="Brawijaya Film Festival atau BYFEST merupakan festival film tahunan yang digagas oleh Unit Kegiatan Mahasiswa (UKM) Nol Derajat Film Universitas Brawijaya." 
+          />
+          <meta 
+            name="keywords" 
+            content="Brawijaya Film Festival, BYFEST, Nol Derajat Film, Nolder, UB" 
+          />
+          <meta name="authors" content="Brawijaya Film Festival" />
         </Helmet>
         <GlobalNavbar active={location.pathname} />
         {/* <Pages> */}
