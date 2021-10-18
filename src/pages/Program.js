@@ -173,7 +173,7 @@ const Program = () => {
                                   <CloseButton />
                                 </a>
                               </Col>
-                              <Col xs={6} md={5} lg={3} className="column kiri">
+                              <Col xs={12} md={5} lg={3} className="column kiri">
                                 <img
                                   src={`/img/programs/${posterFilm.poster}`}
                                   className="poster-preview d-inline-block align-top"
@@ -181,7 +181,7 @@ const Program = () => {
                                   // height="100"
                                 />
                               </Col>
-                              <Col xs={6} md={7} lg={9} className="column kanan">
+                              <Col xs={12} md={7} lg={9} className="column kanan">
                                 <div className="kanan-inner">
                                   <h3>{posterFilm.judul}</h3>
                                   <p className="director">{posterFilm.direktor}</p>

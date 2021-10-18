@@ -51,7 +51,7 @@ const GlobalNavbar = (props) => {
                             <Nav.Link eventKey="2" as={Link} to="/featured">
                                 <button className={`navbar-button ${ featured }`}>Program</button>
                             </Nav.Link>
-                            <Nav.Link eventKey="3" as={Link} to="/menu">
+                            <Nav.Link eventKey="3" as={Link} to="/schedule">
                                 <button className="navbar-button submission">Streaming</button>
                             </Nav.Link>
                             {/* <Nav.Link href="#home">Home</Nav.Link>

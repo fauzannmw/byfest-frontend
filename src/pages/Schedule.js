@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import { OverlayTrigger, Table, Tooltip, Nav } from 'react-bootstrap';
-import './Menu.scss'
+import './Schedule.scss'
 import { useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 const Menu = () => {
   const buttonDay = [
@@ -20,9 +21,15 @@ const Menu = () => {
   ]
   const [day, setDay] = useState('1');
   return (
-    <div className="menu">
+    <div className="schedule">
+      <Helmet>
+          <title>Schedule</title>
+      </Helmet>
+
       <div className="content">
         <div className="container">
+
+        <h1 className="schedule-h1">SCHEDULE</h1>
 
           <Nav justify variant="pills" defaultActiveKey="1">
             {buttonDay.map((btn) => {

@@ -10,7 +10,7 @@ const Streaming = () => {
   return (
     <div className="streaming">
       <div className="container">
-        <h1 className="header">BRAWIJAYA FILM FESTIVAL DAY - {slug} </h1>
+        <h1 className="header">BYFEST DAY - {slug} </h1>
         <YoutubeEmbed embedId="rKIBiJt6EF8" />
         <div className="judul">
           <h2>NOW PLAYING</h2>
@@ -19,7 +19,7 @@ const Streaming = () => {
           .filter((filterfilm) => filterfilm.day === slug)
           .map((film) => {
             return (
-              <div className="row my-5">
+              <div className="row my-4">
                 <div
                   className="col-lg-3 d-flex justify-content-center"
                   style={{ padding: "0" }}

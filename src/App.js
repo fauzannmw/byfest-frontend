@@ -14,9 +14,10 @@ import { Helmet } from 'react-helmet';
 import Program from './pages/Program';
 import PrivateRoute from './config/PrivateRoute';
 import Login from './pages/Login';
-import Menu from './pages/Menu';
+import Schedule from './pages/Schedule';
 import { useState } from 'react';
 import { AuthContext } from './config/Auth';
+import ScrollToTop from "./component/ScrollToTop";
 
 function App() {
   function PageSwitch() {
@@ -35,7 +36,7 @@ function App() {
           <Route exact path="/login" component={Login} />
           <Route exact path="/" component={Homepage} />
           <PrivateRoute exact path="/streaming/:slug" component={Streaming} />
-          <PrivateRoute exact path="/menu" component={Menu} />
+          <PrivateRoute exact path="/schedule" component={Schedule} />
         </Switch>
         {/* </Pages> */}
         <GlobalFooter />
@@ -53,6 +54,7 @@ function App() {
   return (
     <AuthContext.Provider value={{authTokens, setAuthTokens: setTokens}}>
       <Router>
+        <ScrollToTop />
         <PageSwitch />
       </Router>
     </AuthContext.Provider>

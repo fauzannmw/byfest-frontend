@@ -25,7 +25,7 @@ const Login = () => {
       if(res.data.status == true){
         setAuthTokens(Password);
         setLoggedIn(true);
-        history.push('/menu')
+        history.push('/schedule')
       } else {
         alert("Password yang anda masukkan salah");
       }
@@ -37,7 +37,7 @@ const Login = () => {
   }
 
   if(isLoggedIn){
-    return <Redirect to={"/menu"} />
+    return <Redirect to={"/schedule"} />
   }
 
   return (
